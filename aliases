@@ -1,0 +1,57 @@
+alias ll='ls -lG'
+alias lla='ll -a'
+alias egrep='egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias grep='egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias ..='cd ..'
+
+# Mac OS hacks
+alias mute='sudo osascript -e "set Volume 0"'
+alias unmute='sudo osascript -e "set Volume 1"'
+alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+
+# parallelcluster
+pls() {
+    local config_file=""
+    local config_arg=""
+    local cmd=""
+    if [[ $# -gt 1 ]]
+    then
+        echo pls [region]
+        return 1
+    elif [[ $# == 1 ]]
+    then
+        config_file=$(new-pcluster-config-with-region.py --region $1)
+        [[ -n $PLS_DEBUG ]] && cat $config_file
+    fi
+    if [[ -n $config_file ]]
+    then
+      config_arg="-c $config_file"
+      [[ -n $PLS_DEBUG ]] && echo $config_arg
+    fi
+    cmd="pcluster list $config_arg"
+    [[ -n $PLS_DEBUG ]] && echo $cmd
+    eval $cmd
+    rm -f $config_file
+}
+getallclusters() {
+  pls | awk '{print $1}'
+}
+alias pssh='pcluster ssh'
+alias pupdate='pcluster update'
+alias prm='pcluster delete'
+alias prmall='for cluster in $(getallclusters); do prm -nw >/dev/null $cluster; done'
+alias pinit='pcluster create'
+alias pstat='pcluster status'
+
+# git
+alias &>/dev/null gl && unalias gl
+gl() {
+  git lg | head ${1:-5}
+}
+alias gfr="git fetch upstream && git rebase upstream/develop"
+alias gs="git status"
+alias gd="git diff"
+alias gb='git branch'
+
+# aws credentials
+alias _unset_aws='unset AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'

@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/tlane/repos/rosetta_ostest/.git'
+let g:netrw_dirhist_2='/Users/tlane/dummyPlugin/src/main/java/com/us/cray/tutorial/myPlugin/impl'
+let g:netrw_dirhist_3='/Users/tlane/repos/tlane_personal/config'
+let g:netrw_dirhist_4='/Users/tlane/repos/scratch_work/sshot-llr'
+let g:netrw_dirhist_5='/Users/tlane/repos/rosetta_ostest/src/modules/python/internal/rosetta-ostest/sshottest/rosetta'
+let g:netrw_dirhist_6='/Users/tlane/repos/scratch_work/ostinato-build'
+let g:netrw_dirhist_7='/Users/tlane/repos/rosetta_ostest/src/modules/python/internal/rosetta-ostest/sshottest/rosetta'

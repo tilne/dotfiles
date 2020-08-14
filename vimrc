@@ -17,8 +17,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-python/python-syntax'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'jmcantrell/vim-virtualenv'
-Plugin 'Chiel92/vim-autoformat'
+Plugin 'preservim/nerdtree'
 
 call vundle#end()
 
@@ -39,7 +38,7 @@ set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
 set background=dark
-colo Apprentice
+colo apprentice
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

@@ -5,6 +5,8 @@ set -ex
 # vim
 cp -r vim ~/.vim
 cp vimrc ~/.vimrc
+VUNDLE_DIR=${HOME}/.vim/bundle/Vundle.vim
+[ -d ${VUNDLE_DIR} ] || git clone https://github.com/VundleVim/Vundle.vim.git ${VUNDLE_DIR}
 
 # aliases
 cp ./aliases ~/.aliases

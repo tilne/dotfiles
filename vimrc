@@ -125,6 +125,9 @@ set tags=~/pcluster-tags
 set updatetime=100
 
 " Use virtualenv if one is activated
+" vim must be compiled with python3 support for the following to work
+" If it was compiled with python2 support the command can be changed
+" from 'py3' to 'py' and it should work.
 py3 << EOF
 import os
 import site

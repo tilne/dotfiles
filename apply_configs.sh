@@ -7,7 +7,7 @@ cp -r vim ~/.vim
 cp vimrc ~/.vimrc
 
 # aliases
-cp ~/aliases ~/.aliases
+cp ./aliases ~/.aliases
 
 # bash
 cp bashrc ~/.bashrc

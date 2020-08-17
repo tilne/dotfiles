@@ -1,5 +1,5 @@
 #!/bin/bash
-set -o vi
+set -o emacs
 export LSCOLORS='fxfxcxdxgxegedabagacad'
 export PS1='\[\e[32m\]\u\[\e[0m\]@\[\e[32m\]\h\[\e[0m\]:\[\e[32m\]\W\[\e[32m\]> \[\e[0m\]'
 export PATH=$PATH:~/.toolbox/bin

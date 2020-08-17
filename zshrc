@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-set -o vi
+set -o emacs
 export LSCOLORS='fxfxcxdxgxegedabagacad'
 export EDITOR="vim"
 export EDITOR="vim"

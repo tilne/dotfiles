@@ -4,6 +4,7 @@
 (add-to-list 'default-frame-alist
 	     '(font . "Source Code Pro for Powerline"))
 (load-theme 'monokai-pro t)
+(show-paren-mode 1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

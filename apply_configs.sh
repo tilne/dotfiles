@@ -26,3 +26,9 @@ VIRTUALENV_PLUGIN_DIR=${PYENV_ROOT}/plugins/pyenv-virtualenv
 [ -d ${PYENV_ROOT} ] || git clone https://github.com/pyenv/pyenv ${PYENV_ROOT}
 [ -d ${VIRTUALENV_PLUGIN_DIR} ] || git clone https://github.com/pyenv/pyenv-virtualenv.git ${VIRTUALENV_PLUGIN_DIR}
 cp pythonrc ~/.pythonrc
+
+# emacs
+cp ./emacs ~/.emacs
+EMACS_DIR=${HOME}/.emacs.d
+ESHELL_DIR=${EMACS_DIR}/eshell
+cp ./eshell-profile ${ESHELL_DIR}/profile

@@ -46,7 +46,7 @@ alias pstat='pcluster status'
 # git
 alias &>/dev/null gl && unalias gl
 gl() {
-  git lg | head ${1:-5}
+  git lg | head -${1:-5}
 }
 alias gfr="git fetch upstream && git rebase upstream/develop"
 alias gs="git status"

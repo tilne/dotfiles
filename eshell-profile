@@ -1,1 +1,1 @@
-export PATH=$PATH:$HOME/repos/tilne-utils:$HOME/bin
+export PATH=$PATH:$HOME/repos/tilne-utils:$HOME/bin:/usr/local/bin

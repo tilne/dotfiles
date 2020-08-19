@@ -21,8 +21,7 @@ source $ZSH/oh-my-zsh.sh
 set -o emacs
 export LSCOLORS='fxfxcxdxgxegedabagacad'
 export EDITOR="vim"
-export EDITOR="vim"
-export PATH=$PATH:~/.toolbox/bin:${HOME}/repos/tilne-utils:${HOME}/bin
+export PATH=$PATH:~/.toolbox/bin:${HOME}/repos/tilne-utils:${HOME}/bin:/usr/local/bin
 export TMPDIR='/tmp'
 export PYTHONSTARTUP="$HOME/.pythonrc"
 source ~/.secrets

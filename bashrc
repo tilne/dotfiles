@@ -10,7 +10,7 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 source ~/.aliases
 source ~/.secrets
 
-ssh-add ~/.ssh/tilne.pem
+ssh-add &>/dev/null ~/.ssh/tilne.pem
 source ~/.iterm2_shell_integration.bash
 
 # pyenv initialization

@@ -27,7 +27,7 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 source ~/.secrets
 source ~/.aliases
 
-ssh-add ~/.ssh/tilne.pem
+ssh-add &>/dev/null ~/.ssh/tilne.pem
 
 # pyenv initialization
 export PATH="${HOME}/.pyenv/bin:$PATH"

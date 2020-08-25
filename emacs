@@ -20,15 +20,19 @@
 ;; requires the json-mode package
 (setq js-indent-level 2)
 
-;; enable ido (everywhere)
-;; turn on fuzzy matching
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
+;; enable ivy
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+
+;; enable swiper
+(global-set-key "\C-s" 'swiper)
 
 ;; enable jumping to windows by number using M-<Window Number>
 ;; requires the window-numbering package
 (window-numbering-mode 1)
+
+;; prevent startup screen from showing
+(setq inhibit-startup-screen t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -38,9 +42,10 @@
  '(custom-safe-themes
    (quote
     ("5846b39f2171d620c45ee31409350c1ccaddebd3f88ac19894ae15db9ef23035" default)))
+ '(org-export-backends (quote (ascii html icalendar latex md odt)))
  '(package-selected-packages
    (quote
-    (magit doom-themes window-numbering groovy-mode git-gutter json-mode monokai-pro-theme))))
+    (ivy swiper magit doom-themes window-numbering groovy-mode git-gutter json-mode monokai-pro-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

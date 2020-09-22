@@ -15,7 +15,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-python/python-syntax'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'preservim/nerdtree'
 

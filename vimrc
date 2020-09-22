@@ -47,6 +47,7 @@ set incsearch smartcase hlsearch
 set number          " number lines
 set autoread        " if local file is modified, read it into vim immediately
 set encoding=utf-8  " unicode
+set scrollback=20000  " 20k lines of scrollback buffer in terminal emulator
 
 " necessary to use ctrl-w to delete whole words for some reason
 set backspace=indent,eol,start

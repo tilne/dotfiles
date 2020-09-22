@@ -5,6 +5,7 @@ filetype plugin on
 set clipboard=unnamed
 
 set foldmethod=syntax
+set nofoldenable    " disable folding on startup
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

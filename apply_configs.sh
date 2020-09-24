@@ -32,3 +32,6 @@ cp ./emacs ~/.emacs
 EMACS_DIR=${HOME}/.emacs.d
 ESHELL_DIR=${EMACS_DIR}/eshell
 cp ./eshell-profile ${ESHELL_DIR}/profile
+
+# tmux
+cp ./tmux.conf ~/.tmux.conf

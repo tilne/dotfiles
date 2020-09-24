@@ -128,7 +128,7 @@ function! s:RunShellCommand(cmdline)
   1
 endfunction
 
-set tags=~/pcluster-tags
+set tags=tags
 
 " polling period for GitGutter, 100 ms instead of default 4 seconds
 set updatetime=100

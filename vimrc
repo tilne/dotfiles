@@ -132,33 +132,3 @@ set tags=tags
 
 " polling period for GitGutter, 100 ms instead of default 4 seconds
 set updatetime=100
-
-" Use virtualenv if one is activated
-" vim must be compiled with python3 support for the following to work
-" If it was compiled with python2 support the command can be changed
-" from 'py3' to 'py' and it should work.
-py3 << EOF
-import os
-import site
-import sys
-
-import vim
-
-venv = os.environ.get('VIRTUAL_ENV')
-
-if venv:
-    old_os_path = os.environ['PATH']
-    os.environ['PATH'] = os.path.join(venv, 'bin') + os.pathsep + old_os_path
-    site_packages = os.path.join(venv, 'lib', 'python%s' % sys.version[:3], 'site-packages')
-    site.addsitedir(site_packages)
-    sys.real_prefix = sys.prefix
-    sys.prefix = venv
-    # Move the added items to the front of the path:
-    prev_sys_path = list(sys.path)
-    new_sys_path = []
-    for item in list(sys.path):
-        if item not in prev_sys_path:
-            new_sys_path.append(item)
-            sys.path.remove(item)
-    sys.path[:0] = new_sys_path
-EOF

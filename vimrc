@@ -38,7 +38,8 @@ set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
 set background=dark
-colo apprentice
+colo onedark        " from joshdick/onedark.vim
+"colo OceanicNext   " from mhartington/oceanic-next
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

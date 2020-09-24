@@ -92,6 +92,9 @@ augroup END
 " autocmd vimenter * NERDTree
 autocmd BufEnter * :syntax sync fromstart
 
+" Set max line width for markdown files
+"au BufRead,BufNewFile *.md setlocal textwidth=100
+
 " NERDTree aliases
 cnoreabbrev nt NERDTree
 cnoreabbrev ntt NERDTreeToggle

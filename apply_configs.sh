@@ -40,3 +40,8 @@ cp ./tmux.conf ~/.tmux.conf
 LOCAL_BIN=~/bin
 [ -d "${LOCAL_BIN}" ] || mkdir -p "${LOCAL_BIN}"
 cp ./status.py "${LOCAL_BIN}"
+
+# alacritty
+ALACRITTY_CONFIG_DIR="${HOME}"/.config/alacritty
+[ -d "${ALACRITTY_CONFIG_DIR}" ] || mkdir -p "${ALACRITTY_CONFIG_DIR}"
+ln -s "$(pwd)"/alacritty.yml "${ALACRITTY_CONFIG_DIR}"

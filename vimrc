@@ -40,6 +40,7 @@ set t_Co=256        " Sets vim to 256 colors
 set background=dark
 colo onedark        " from joshdick/onedark.vim
 "colo OceanicNext   " from mhartington/oceanic-next
+"colo apprentice   " from romainl/Apprentice
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

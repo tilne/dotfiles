@@ -106,6 +106,13 @@ nnoremap <F2> =
 " Various shortcut mappings
 nnoremap <Leader>f :Autoformat<CR>
 nnoremap <Leader>n :noh<CR>
+nnoremap <Leader>sv :so ~/.vimrc<CR>
+
+" edit today's status report
+function! EditTodaysStatusReport()
+    execute "edit " . system('status.py print')
+endfunction
+nnoremap <Leader>es :call EditTodaysStatusReport()<CR>
 
 set tags=tags
 

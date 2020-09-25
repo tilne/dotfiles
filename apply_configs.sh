@@ -35,3 +35,8 @@ cp ./eshell-profile ${ESHELL_DIR}/profile
 
 # tmux
 cp ./tmux.conf ~/.tmux.conf
+
+# script for editing status reports
+LOCAL_BIN=~/bin
+[ -d "${LOCAL_BIN}" ] || mkdir -p "${LOCAL_BIN}"
+cp ./status.py "${LOCAL_BIN}"

@@ -17,7 +17,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-python/python-syntax'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'preservim/nerdtree'
 
 call vundle#end()
 
@@ -90,16 +89,10 @@ augroup resCur
     autocmd BufWinEnter * call ResCur()
 augroup END
 
-" autocmd vimenter * NERDTree
 autocmd BufEnter * :syntax sync fromstart
 
 " Set max line width for markdown files
 "au BufRead,BufNewFile *.md setlocal textwidth=100
-
-" NERDTree aliases
-cnoreabbrev nt NERDTree
-cnoreabbrev ntt NERDTreeToggle
-cnoreabbrev rso resize 1
 
 " F2 sets all windows to equal width
 nnoremap <F2> =

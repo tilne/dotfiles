@@ -103,6 +103,9 @@ cnoreabbrev rso resize 1
 " F2 sets all windows to equal width
 nnoremap <F2> =
 
+" remap leader key to space
+let mapleader = " "
+
 " Various shortcut mappings
 nnoremap <Leader>f :Autoformat<CR>
 nnoremap <Leader>n :noh<CR>

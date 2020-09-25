@@ -111,8 +111,8 @@ let mapleader = " "
 nnoremap <Leader>f :Autoformat<CR>
 nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/.vimrc<CR>
-nnoremap <Leader>ev :e ~/.vimrc<CR>
-nnoremap <Leader>ea :e ~/.config/alacritty/alacritty.yml<CR>
+nnoremap <Leader>ev :e ~/repos/dotfiles/vimrc<CR>
+nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
 
 " edit today's status report
 function! EditTodaysStatusReport()

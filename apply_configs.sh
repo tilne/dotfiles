@@ -24,6 +24,7 @@ ln -s "${REPO_DIR}"/bash_profile ~/.bash_profile
 # zsh
 OH_MY_ZSH_HOME="${HOME}"/.oh-my-zsh
 [ -d "${OH_MY_ZSH_HOME}" ] || git clone https://github.com/ohmyzsh/ohmyzsh "${OH_MY_ZSH_HOME}"
+ln -s "${REPO_DIR}"/refined-tilne.zsh-theme ~/.oh-my-zsh/themes/refined-tilne.zsh-theme
 ln -s "${REPO_DIR}"/zshrc ~/.zshrc
 
 # python

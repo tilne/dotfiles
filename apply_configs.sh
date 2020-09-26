@@ -51,3 +51,7 @@ ln -s "${REPO_DIR}"/status.py "${LOCAL_BIN}"
 ALACRITTY_CONFIG_DIR="${HOME}"/.config/alacritty
 [ -d "${ALACRITTY_CONFIG_DIR}" ] || mkdir -p "${ALACRITTY_CONFIG_DIR}"
 ln -s "${REPO_DIR}"/alacritty.yml "${ALACRITTY_CONFIG_DIR}"
+
+# git configs
+ln -s "${REPO_DIR}"/gitconfig ~/.gitconfig
+ln -s "${REPO_DIR}"/gitignore ~/.gitignore

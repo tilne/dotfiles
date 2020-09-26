@@ -110,12 +110,12 @@ nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
-autocmd FileType c,cpp,java,scala let b:comment_leader = '//'
-autocmd FileType sh,ruby,python   let b:comment_leader = '#'
-autocmd FileType conf,fstab       let b:comment_leader = '#'
-autocmd FileType tex              let b:comment_leader = '%'
-autocmd FileType mail             let b:comment_leader = '>'
-autocmd FileType vim              let b:comment_leader = '"'
+autocmd FileType c,cpp,java,scala     let b:comment_leader = '//'
+autocmd FileType zsh,sh,ruby,python   let b:comment_leader = '#'
+autocmd FileType conf,fstab           let b:comment_leader = '#'
+autocmd FileType tex                  let b:comment_leader = '%'
+autocmd FileType mail                 let b:comment_leader = '>'
+autocmd FileType vim                  let b:comment_leader = '"'
 function! CommentToggle()
     execute ':silent! s/\([^ ]\)/' . escape(b:comment_leader,'\/') . ' \1/'
     execute ':silent! s/^\( *\)' . escape(b:comment_leader,'\/') . ' \?' . escape(b:comment_leader,'\/') . ' \?/\1/'

@@ -21,6 +21,7 @@ fi
 
 set -o emacs
 export LSCOLORS='fxfxcxdxgxegedabagacad'
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH=$PATH:~/.toolbox/bin:${HOME}/repos/tilne-utils:${HOME}/bin:/usr/local/bin
 export TMPDIR='/tmp'
 export PYTHONSTARTUP="$HOME/.pythonrc"

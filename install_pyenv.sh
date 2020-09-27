@@ -24,8 +24,9 @@ parse_args() {
         exit 0
         ;;
       *)
+        echo >&2 "Unrecognized option '$1'"
         syntax
-        fail "Unrecognized option '$1'"
+        exit 1
         ;;
     esac
     shift

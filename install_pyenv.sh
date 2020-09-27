@@ -7,8 +7,8 @@ CLOBBER=false
 
 syntax() {
   cat <<- EOF
-install-pyenv.sh [-c]
-  -c/--clobber    If a directory already exists at ~/.pyenv, remove it and and re-clone
+install_pyenv.sh [-c]
+  -c/--clobber    If ~/.pyenv already exists, remove it and and re-clone
 EOF
 }
 

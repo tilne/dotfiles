@@ -1,0 +1,3 @@
+ GitPython
+ clipboard
+ pylint

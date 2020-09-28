@@ -17,16 +17,22 @@ STATUS_REPORT_DIR = os.path.expanduser("~/repos/markdown-scratch/status-reports"
 
 class Actions(Enum):
     """enumeration of valid actions."""
-    EDIT = "edit"
-    CREATE = "create"
     COPY = "copy"
+    CREATE = "create"
+    EDIT = "edit"
     PRINT = "print"
 
 
 def parse_args():
     """Return argparse.Namespace representing args passed on command line."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("action", type=Actions, nargs="?", default=Actions.EDIT)
+    parser.add_argument(
+        "action",
+        type=Actions,
+        nargs="?",
+        default=Actions.EDIT,
+        help=f"valid choices: {[action.value for action in list(Actions)]}",
+    )
     return parser.parse_args()
 
 

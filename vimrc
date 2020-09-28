@@ -23,6 +23,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 
 let g:python_highlight_all = 1
+" These are settings to try if nvim is found to be loading slow due to
+" sourcing python providers.
+" https://github.com/neovim/neovim/issues/2437
+" let g:python_host_skip_check = 1
+" let g:python3_host_skip_check = 1
 
 set ts=4            " Tab width
 set sw=4            " Shift width

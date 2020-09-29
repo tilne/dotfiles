@@ -110,6 +110,10 @@ nnoremap <Leader>ev :e ~/repos/dotfiles/vimrc<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>
+nnoremap <Leader>wh <C-w>h
+nnoremap <Leader>wl <C-w>l
+nnoremap <Leader>wj <C-w>j
+nnoremap <Leader>wk <C-w>k
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

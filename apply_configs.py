@@ -76,11 +76,12 @@ def clone_repo(repo_url, path, clobber=False):
     Repo.clone_from(repo_url, path)
 
 
-def clone_repos_if_needed(clobber=False):
+def clone_repos_if_needed(clobber=False, repos_to_clone=None):
     """Clone certain repos if needed."""
-    repos_to_clone = {
-        "https://github.com/ohmyzsh/ohmyzsh.git": os.path.expanduser("~/.oh-my-zsh"),
-    }
+    if not repos_to_clone:
+        repos_to_clone = {
+            "https://github.com/ohmyzsh/ohmyzsh.git": os.path.expanduser("~/.oh-my-zsh"),
+        }
     for repo_url, path in repos_to_clone.items():
         clone_repo(repo_url, path, clobber)
 
@@ -129,7 +130,10 @@ def create_symlinks(clobber=False):
 def handle_special_cases(clobber=False):
     """Do stuff that couldn't be batched for whatever reason."""
     # This has to be done after the symlink to the ./vim directory is made.
-    clone_repo("https://github.com/VundleVim/Vundle.vim.git", os.path.expanduser("~/.vim/bundle/Vundle.vim"), clobber)
+    clone_repos_if_needed(
+        clobber,
+        {"https://github.com/VundleVim/Vundle.vim.git": os.path.expanduser("~/.vim/bundle/Vundle.vim")},
+    )
 
 
 def main():

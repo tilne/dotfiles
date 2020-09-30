@@ -57,15 +57,15 @@ font:
   # The normal (roman) font face to use.
   # Style can be specified to pick a specific face.
   normal:
-    family: "Source Code Pro for Powerline"
+    family: "Source Code Pro Light"
 
   # The bold font face
   bold:
-    family: "Source Code Pro for Powerline"
+    family: "Source Code Pro Light"
 
   # The italic font face
   italic:
-    family: "Source Code Pro for Powerline"
+    family: "Source Code Pro Light"
 
   # Point size of the font
   size: 12.0

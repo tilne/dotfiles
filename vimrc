@@ -141,3 +141,11 @@ set tags=tags
 
 " polling period for GitGutter, 100 ms instead of default 4 seconds
 set updatetime=100
+
+" support 256-bit colors
+" https://github.com/alacritty/alacritty/issues/109
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif

@@ -106,24 +106,24 @@ def link_if_needed(target, path, clobber=False):
 def create_symlinks(clobber=False):
     """Create desired symlinks for config files."""
     symlinks = {
-        "vim": os.path.expanduser("~/.vim"),
-        "vimrc": os.path.expanduser("~/.vimrc"),
-        "zshrc": os.path.expanduser("~/.zshrc"),
-        "aliases": os.path.expanduser("~/.aliases"),
-        "bashrc": os.path.expanduser("~/.bashrc"),
-        "bash_profile": os.path.expanduser("~/.bash_profile"),
-        "refined-tilne.zsh-theme": os.path.expanduser("~/.oh-my-zsh/themes/refined-tilne.zsh-theme"),
-        "pythonrc": os.path.expanduser("~/.pythonrc"),
-        "emacs": os.path.expanduser("~/.emacs"),
-        "eshell-profile": os.path.expanduser("~/.emacs.d/eshell/profile"),
-        "tmux.conf": os.path.expanduser("~/.tmux.conf"),
-        "status.py": os.path.expanduser("~/bin/status.py"),
-        "alacritty.yml": os.path.expanduser("~/.config/alacritty/alacritty.yml"),
-        "gitconfig": os.path.expanduser("~/.gitconfig"),
-        "gitignore": os.path.expanduser("~/.gitignore"),
+        "vim": "~/.vim",
+        "vimrc": "~/.vimrc",
+        "zshrc": "~/.zshrc",
+        "aliases": "~/.aliases",
+        "bashrc": "~/.bashrc",
+        "bash_profile": "~/.bash_profile",
+        "refined-tilne.zsh-theme": "~/.oh-my-zsh/themes/refined-tilne.zsh-theme",
+        "pythonrc": "~/.pythonrc",
+        "emacs": "~/.emacs",
+        "eshell-profile": "~/.emacs.d/eshell/profile",
+        "tmux.conf": "~/.tmux.conf",
+        "status.py": "~/bin/status.py",
+        "alacritty.yml": "~/.config/alacritty/alacritty.yml",
+        "gitconfig": "~/.gitconfig",
+        "gitignore": "~/.gitignore",
     }
     for repo_file, link_path in symlinks.items():
-        link_if_needed(os.path.join(REPO_DIR, repo_file), link_path, clobber)
+        link_if_needed(os.path.join(REPO_DIR, repo_file), os.path.expanduser(link_path), clobber)
 
 
 def handle_special_cases(clobber=False):

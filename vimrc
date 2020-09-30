@@ -114,6 +114,7 @@ nnoremap <Leader>wh <C-w>h
 nnoremap <Leader>wl <C-w>l
 nnoremap <Leader>wj <C-w>j
 nnoremap <Leader>wk <C-w>k
+nnoremap <Leader>wc <C-w>c
 nnoremap <Leader>ww :w<CR>
 
 " shortcuts for quick commenting/un-commenting

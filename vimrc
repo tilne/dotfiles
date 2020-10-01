@@ -117,6 +117,8 @@ nnoremap <Leader>wj <C-w>j
 nnoremap <Leader>wk <C-w>k
 nnoremap <Leader>wc <C-w>c
 nnoremap <Leader>ww :w<CR>
+nnoremap <Leader>cc :<C-f>
+nnoremap <Leader>sc /<C-f>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

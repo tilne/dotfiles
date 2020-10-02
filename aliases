@@ -1,3 +1,4 @@
+# vi: ft=sh
 alias ll='ls -lG'
 alias lla='ll -a'
 alias egrep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cache} --exclude '*.pyc'"

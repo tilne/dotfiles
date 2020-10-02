@@ -115,12 +115,17 @@ nnoremap <Leader>ev :e ~/repos/dotfiles/vimrc<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>
+nnoremap <Leader>eg :e ~/repos/dotfiles/gitconfig<CR>
 nnoremap <Leader>wh <C-w>h
 nnoremap <Leader>wl <C-w>l
 nnoremap <Leader>wj <C-w>j
 nnoremap <Leader>wk <C-w>k
 nnoremap <Leader>wc <C-w>c
 nnoremap <Leader>ww :w<CR>
+nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>qq :q<CR>
+nnoremap <Leader>spv :vsp<CR>
+nnoremap <Leader>sph :sp<CR>
 nnoremap <Leader>cc :<C-f>
 nnoremap <Leader>sc /<C-f>
 nnoremap <Leader>gs :Git status<CR>
@@ -129,6 +134,7 @@ nnoremap <Leader>gcc :Git commit<CR>
 nnoremap <Leader>gca :Git commit --amend<CR>
 nnoremap <Leader>gpp :Git push<CR>
 nnoremap <Leader>gpf :Git push --force<CR>
+nnoremap <Leader>glg :Git log<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

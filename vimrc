@@ -124,6 +124,12 @@ nnoremap <Leader>wc <C-w>c
 nnoremap <Leader>ww :w<CR>
 nnoremap <Leader>cc :<C-f>
 nnoremap <Leader>sc /<C-f>
+nnoremap <Leader>gs :Git status<CR>
+nnoremap <Leader>gd :Git diff %<CR>
+nnoremap <Leader>gcc :Git commit<CR>
+nnoremap <Leader>gca :Git commit --amend<CR>
+nnoremap <Leader>gpp :Git push<CR>
+nnoremap <Leader>gpf :Git push --force<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

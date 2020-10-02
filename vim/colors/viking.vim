@@ -271,6 +271,16 @@ call s:h("pythonRun", { "fg": s:whitewhite }) " current match in 'wildmenu' comp
 call s:h("pythonDecorator", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
 call s:h("pythonDottedName", { "fg": s:blue }) " current match in 'wildmenu' completion
 
+call s:h("vimAutoEvent", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("vimOption", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("vimSynType", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("vimIsCommand", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("vimSetEqual", { "fg": s:white }) " current match in 'wildmenu' completion
+call s:h("vimSet", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("vimSyncC", { "fg": s:white }) " current match in 'wildmenu' completion
+call s:h("vimCommentTitle", { "fg": s:pink }) " current match in 'wildmenu' completion
+call s:h("vimHiGroup", { "fg": s:blue }) " current match in 'wildmenu' completion
+
 " }}}
 
 " Termdebug highlighting for Vim 8.1+ {{{

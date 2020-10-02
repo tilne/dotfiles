@@ -614,6 +614,7 @@ hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 " ini config files {{{
 
 call s:h("pythonBuiltinType", { "fg": s:red }) " current match in 'wildmenu' completion
+call s:h("pythonBuiltinFunc", { "fg": s:red }) " current match in 'wildmenu' completion
 call s:h("pythonFunction", { "fg": s:red }) " current match in 'wildmenu' completion
 call s:h("pythonStrInterpRegion", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
 call s:h("pythonStrFormat", { "fg": s:whitewhite }) " current match in 'wildmenu' completion

@@ -138,6 +138,7 @@ let s:blue = s:colors.blue
 let s:purple = s:colors.purple
 let s:cyan = s:colors.cyan
 let s:white = s:colors.white
+let s:whitewhite = s:colors.whitewhite
 let s:black = s:colors.black
 let s:visual_black = s:colors.visual_black " Black out selected text in 16-color visual mode
 let s:comment_grey = s:colors.comment_grey
@@ -197,7 +198,7 @@ call s:h("Debug", {}) " debugging statements
 call s:h("Underlined", { "gui": "underline", "cterm": "underline" }) " text that stands out, HTML links
 call s:h("Ignore", {}) " left blank, hidden
 call s:h("Error", { "fg": s:red }) " any erroneous construct
-call s:h("Todo", { "fg": s:red }) " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+call s:h("Todo", { "fg": s:yellow }) " anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
 " }}}
 
@@ -260,6 +261,15 @@ call s:h("Visual", { "fg": s:visual_black, "bg": s:visual_grey }) " Visual mode 
 call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 call s:h("WarningMsg", { "fg": s:yellow }) " warning messages
 call s:h("WildMenu", { "fg": s:black, "bg": s:blue }) " current match in 'wildmenu' completion
+
+call s:h("pythonBuiltinType", { "fg": s:red }) " current match in 'wildmenu' completion
+call s:h("pythonFunction", { "fg": s:red }) " current match in 'wildmenu' completion
+call s:h("pythonExClass", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("pythonStrInterpRegion", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonStrFormat", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonRun", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonDecorator", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonDottedName", { "fg": s:blue }) " current match in 'wildmenu' completion
 
 " }}}
 
@@ -476,9 +486,7 @@ call s:h("rubyGlobalVariable", { "fg": s:red})
 call s:h("rubyInclude", { "fg": s:blue})
 call s:h("rubyIncluderubyGlobalVariable", { "fg": s:red})
 call s:h("rubyInstanceVariable", { "fg": s:red})
-call s:h("rubyInterpolation", { "fg": s:cyan })
-call s:h("rubyInterpolationDelimiter", { "fg": s:red })
-call s:h("rubyInterpolationDelimiter", { "fg": s:red})
+call s:h("rubyInterpolationDelimiter", { "fg": s:blue })
 call s:h("rubyRegexp", { "fg": s:cyan})
 call s:h("rubyRegexpDelimiter", { "fg": s:cyan})
 call s:h("rubyStringDelimiter", { "fg": s:green})

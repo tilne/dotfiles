@@ -129,8 +129,6 @@ nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>qq :q<CR>
 nnoremap <Leader>spv :vsp<CR>
 nnoremap <Leader>sph :sp<CR>
-nnoremap <Leader>cc :<C-f>
-nnoremap <Leader>sc /<C-f>
 nnoremap <Leader>gs :Git status<CR>
 nnoremap <Leader>gd :Git diff %<CR>
 nnoremap <Leader>gcc :Git commit<CR>

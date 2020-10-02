@@ -111,7 +111,9 @@ let mapleader = " "
 nnoremap <Leader>f :Autoformat<CR>
 nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/.vimrc<CR>
-nnoremap <Leader>ev :e ~/repos/dotfiles/vimrc<CR>
+nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
+nnoremap <Leader>evc :e ~/repos/dotfiles/vim/colors/viking.vim<CR>
+nnoremap <Leader>eva :e ~/repos/dotfiles/vim/autoload/viking.vim<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>

@@ -43,7 +43,6 @@ set ruler           " Cursor location
 set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
-set background=dark
 "colo onedark       " from joshdick/onedark.vim
 "colo OceanicNext   " from mhartington/oceanic-next
 "colo apprentice    " from romainl/Apprentice

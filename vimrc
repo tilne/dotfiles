@@ -173,7 +173,7 @@ endif
 
 " show how syntax highlighting categorizes word at current point
 " https://stackoverflow.com/questions/29029050/vim-highlighting-is-there-a-way-to-find-out-what-is-applied-at-a-particular-po
-nm <silent> <F1> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name")
+nm <silent> <F3> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name")
     \ . '> trans<' . synIDattr(synID(line("."),col("."),0),"name")
     \ . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name")
     \ . ">"<CR>

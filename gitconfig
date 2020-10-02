@@ -1,3 +1,4 @@
+# vim:ft=gitconfig
 [user]
 	email = tilne@amazon.com
 	name = Tim Lane

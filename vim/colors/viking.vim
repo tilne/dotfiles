@@ -626,6 +626,7 @@ call s:h("pythonFString", { "fg": s:darkgreen }) " current match in 'wildmenu' c
 call s:h("pythonBoolean", { "fg": s:green }) " current match in 'wildmenu' completion
 call s:h("pythonFloat", { "fg": s:green }) " current match in 'wildmenu' completion
 call s:h("pythonNumber", { "fg": s:green }) " current match in 'wildmenu' completion
+call s:h("pythonNone", { "fg": s:green }) " current match in 'wildmenu' completion
 call s:h("pythonFunctionCall", { "fg": s:blue })
 call s:h("pythonTODO", { "fg": s:yellow })
 call s:h("pythonExClass", { "fg": s:cyan }) " current match in 'wildmenu' completion

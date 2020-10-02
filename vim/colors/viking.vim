@@ -132,6 +132,7 @@ let s:red = s:colors.red
 let s:dark_red = s:colors.dark_red
 let s:pink = s:colors.pink
 let s:green = s:colors.green
+let s:darkgreen = s:colors.darkgreen
 let s:yellow = s:colors.yellow
 let s:dark_yellow = s:colors.dark_yellow
 let s:blue = s:colors.blue

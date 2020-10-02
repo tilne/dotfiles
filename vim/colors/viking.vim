@@ -263,15 +263,6 @@ call s:h("VisualNOS", { "bg": s:visual_grey }) " Visual mode selection when vim 
 call s:h("WarningMsg", { "fg": s:yellow }) " warning messages
 call s:h("WildMenu", { "fg": s:black, "bg": s:blue }) " current match in 'wildmenu' completion
 
-call s:h("pythonBuiltinType", { "fg": s:red }) " current match in 'wildmenu' completion
-call s:h("pythonFunction", { "fg": s:red }) " current match in 'wildmenu' completion
-call s:h("pythonExClass", { "fg": s:blue }) " current match in 'wildmenu' completion
-call s:h("pythonStrInterpRegion", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
-call s:h("pythonStrFormat", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
-call s:h("pythonRun", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
-call s:h("pythonDecorator", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
-call s:h("pythonDottedName", { "fg": s:blue }) " current match in 'wildmenu' completion
-
 call s:h("vimAutoEvent", { "fg": s:blue }) " current match in 'wildmenu' completion
 call s:h("vimOption", { "fg": s:blue }) " current match in 'wildmenu' completion
 call s:h("vimSynType", { "fg": s:blue }) " current match in 'wildmenu' completion
@@ -281,6 +272,8 @@ call s:h("vimSet", { "fg": s:blue }) " current match in 'wildmenu' completion
 call s:h("vimSyncC", { "fg": s:white }) " current match in 'wildmenu' completion
 call s:h("vimCommentTitle", { "fg": s:pink }) " current match in 'wildmenu' completion
 call s:h("vimHiGroup", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("vimString", { "fg": s:darkgreen }) " current match in 'wildmenu' completion
+call s:h("vimFuncName", { "fg": s:cyan }) " current match in 'wildmenu' completion
 
 " }}}
 
@@ -615,6 +608,36 @@ hi link gitcommitSelected gitcommitComment
 hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+
+" }}}
+
+" ini config files {{{
+
+call s:h("pythonBuiltinType", { "fg": s:red }) " current match in 'wildmenu' completion
+call s:h("pythonFunction", { "fg": s:red }) " current match in 'wildmenu' completion
+call s:h("pythonStrInterpRegion", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonStrFormat", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonRun", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonDecorator", { "fg": s:whitewhite }) " current match in 'wildmenu' completion
+call s:h("pythonDottedName", { "fg": s:blue }) " current match in 'wildmenu' completion
+call s:h("pythonString", { "fg": s:darkgreen }) " current match in 'wildmenu' completion
+call s:h("pythonFString", { "fg": s:darkgreen }) " current match in 'wildmenu' completion
+call s:h("pythonBoolean", { "fg": s:green }) " current match in 'wildmenu' completion
+call s:h("pythonFloat", { "fg": s:green }) " current match in 'wildmenu' completion
+call s:h("pythonNumber", { "fg": s:green }) " current match in 'wildmenu' completion
+call s:h("pythonFunctionCall", { "fg": s:blue })
+call s:h("pythonTODO", { "fg": s:yellow })
+call s:h("pythonExClass", { "fg": s:cyan }) " current match in 'wildmenu' completion
+call s:h("pythonException", { "fg": s:cyan }) " current match in 'wildmenu' completion
+
+" }}}
+
+" ini config files {{{
+
+call s:h("dosiniHeader", { "fg": s:green })
+call s:h("dosiniLabel", { "fg": s:blue })
+call s:h("dosiniValue", { "fg": s:darkgreen })
+call s:h("dosiniNumber", { "fg": s:darkgreen })
 
 " }}}
 

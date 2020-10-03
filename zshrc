@@ -25,10 +25,8 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH=$PATH:~/.toolbox/bin:${HOME}/repos/tilne-utils:${HOME}/bin:/usr/local/bin
 export TMPDIR='/tmp'
 export PYTHONSTARTUP="$HOME/.pythonrc"
-source ~/.secrets
 source ~/.aliases
-
-ssh-add &>/dev/null ~/.ssh/tilne.pem
+source ~/.secrets
 
 # pyenv initialization
 export PATH="${HOME}/.pyenv/bin:$PATH"

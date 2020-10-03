@@ -46,7 +46,6 @@ def clone_repo(repo_url, path, clobber=False):
             if clobber:
                 logging.info(f"Removing the directory that exists at {path}.")
                 shutil.rmtree(path)  # TODO: what if it's not a directory?
-                # TODO: actually clone
             else:
                 raise Exception(
                     f"Can't clone repo from {repo_url} to {path}. "
@@ -59,7 +58,6 @@ def clone_repo(repo_url, path, clobber=False):
         if clobber:
             logging.info(f"Removing the directory that exists at {path}.")
             shutil.rmtree(path)  # TODO: what if it's not a directory?
-            # TODO: actually clone
         else:
             raise Exception(
                 f"Can't clone repo from {repo_url} to {path}. "

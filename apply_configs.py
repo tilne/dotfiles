@@ -45,7 +45,7 @@ def clone_repo(repo_url, path, clobber=False):
         if list(repo.remotes[0].urls)[0] != repo_url:
             if clobber:
                 logging.info(f"Removing the directory that exists at {path}.")
-                shutil.rmtree(path)  # TODO: what if it's not a directory?
+                shutil.rmtree(path)
             else:
                 raise Exception(
                     f"Can't clone repo from {repo_url} to {path}. "
@@ -57,7 +57,7 @@ def clone_repo(repo_url, path, clobber=False):
     except InvalidGitRepositoryError:
         if clobber:
             logging.info(f"Removing the directory that exists at {path}.")
-            shutil.rmtree(path)  # TODO: what if it's not a directory?
+            shutil.rmtree(path)
         else:
             raise Exception(
                 f"Can't clone repo from {repo_url} to {path}. "
@@ -65,7 +65,6 @@ def clone_repo(repo_url, path, clobber=False):
             )
     except NoSuchPathError:
         # Make parent directories if needed.
-        # TODO: handle when parent directory exists but isn't a directory
         repo_parent_dir = os.path.dirname(path)
         if not os.path.isdir(repo_parent_dir):
             logging.info(f"Creating the directory {repo_parent_dir} in order to clone a repo to {path}")
@@ -96,7 +95,7 @@ def link_if_needed(target, path, clobber=False):
     if os.path.exists(path) or os.path.islink(path):
         if clobber:
             logging.info("File already exists at {path}. Removing it in order to make link to {target}.")
-            os.remove(path)  # TODO: does this work with directories? Would that be good?
+            os.remove(path)
         else:
             raise Exception("File already exists at {path}. Can't make link to {target}.")
     os.symlink(target, path)

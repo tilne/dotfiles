@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 # vi: ft=sh
 alias ll='ls -lG --color=auto'
 alias lla='ll -a --color=auto'
@@ -11,6 +12,7 @@ alias unmute='sudo osascript -e "set Volume 1"'
 alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 # parallelcluster
+# shellcheck disable=SC2120
 pls() {
     local config_file=""
     local config_arg=""
@@ -40,6 +42,7 @@ getallclusters() {
 alias pssh='pcluster ssh'
 alias pupdate='pcluster update'
 alias prm='pcluster delete'
+# shellcheck disable=SC2154
 alias prmall='for cluster in $(getallclusters); do prm -nw >/dev/null $cluster; done'
 alias pinit='pcluster create'
 alias pstat='pcluster status'

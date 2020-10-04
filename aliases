@@ -64,3 +64,6 @@ alias _unset_aws='unset AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_K
 alias tas='tmux a -t screenalive'
 alias tad='tmux a -t dev'
 alias tl='tmux ls'
+
+# copy to clipboard the command used to start a bash shell on container named jenkins
+alias getShellOnJenkinsCommand='echo docker container exec -u 0 -it jenkins bash | pbcopy'

@@ -33,6 +33,13 @@ def parse_args():
         default=Actions.EDIT,
         help=f"valid choices: {[action.value for action in list(Actions)]}",
     )
+    # TODO: use subcommands instead so the following optino can only be used
+    #       when the 'copy' action is specified.
+    parser.add_argument(
+        "--copy-todays-status",
+        action="store_true",
+        help="Copy today's status report instead of the previous working day's",
+    )
     return parser.parse_args()
 
 
@@ -130,12 +137,14 @@ def line_is_start_of_new_section(line):
     return match.group(1) if match else match
 
 
-def copy_previous_workday_status_to_clipboard():
+def copy_status_to_clipboard(today_instead_of_yesterday):
     """Copy the contents of previous workday's status report to the clipboard."""
-    previous_workday_status_report = get_status_report_for_previous_workday()
-    if not os.path.isfile(previous_workday_status_report):
-        sys.exit(f"status report for previous workday doesn't exist at {previous_workday_status_report}")
-    status_report = parse_status_report(previous_workday_status_report)
+    status_report_path = (
+        get_status_report_for_today() if today_instead_of_yesterday else get_status_report_for_previous_workday()
+    )
+    if not os.path.isfile(status_report_path):
+        sys.exit(f"status report for previous workday doesn't exist at {status_report_path}")
+    status_report = parse_status_report(status_report_path)
     clipboard.copy(status_report.get("status"))
 
 
@@ -150,12 +159,13 @@ def main():
         sys.exit(f"Didn't find status report directory at {STATUS_REPORT_DIR}")
     args = parse_args()
     action_to_function = {
-        Actions.COPY: copy_previous_workday_status_to_clipboard,
-        Actions.CREATE: create_todays_status_report,
-        Actions.EDIT: edit_todays_status_report,
-        Actions.PRINT: print_path_to_todays_status_report,
+        Actions.COPY: (copy_status_to_clipboard, [args.copy_todays_status]),
+        Actions.CREATE: (create_todays_status_report, []),
+        Actions.EDIT: (edit_todays_status_report, []),
+        Actions.PRINT: (print_path_to_todays_status_report, []),
     }
-    action_to_function.get(args.action)()
+    action_function, args = action_to_function.get(args.action)
+    action_function(*args)
 
 
 if __name__ == "__main__":

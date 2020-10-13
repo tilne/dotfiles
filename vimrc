@@ -145,6 +145,7 @@ autocmd FileType conf,fstab,make,tmux let b:comment_leader = '#'
 autocmd FileType tex                  let b:comment_leader = '%'
 autocmd FileType mail                 let b:comment_leader = '>'
 autocmd FileType vim                  let b:comment_leader = '"'
+autocmd FileType dosini               let b:comment_leader = ';'
 function! CommentToggle()
     execute ':silent! s/\([^ ]\)/' . escape(b:comment_leader,'\/') . ' \1/'
     execute ':silent! s/^\( *\)' . escape(b:comment_leader,'\/') . ' \?' . escape(b:comment_leader,'\/') . ' \?/\1/'

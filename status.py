@@ -79,7 +79,10 @@ def edit_todays_status_report():
     if not os.path.isfile(todays_status_report):
         sys.exit(f"status report for today doesn't yet exist at {todays_status_report}")
     logging.info(f"Editing {todays_status_report}")
-    sp.run(f"{os.environ.get('EDITOR', 'vim')} {todays_status_report}".split(), check=False)
+    if os.environ.get("TERM_PROGRAM") == "vscode":
+        sp.run(f"open {todays_status_report}".split())
+    else:
+        sp.run(f"{os.environ.get('EDITOR', 'vim')} {todays_status_report}".split(), check=False)
 
 
 def parse_status_report(path):

@@ -57,6 +57,9 @@ alias gs="git status"
 alias gd="git diff"
 alias gb='git branch'
 alias gc='git commit -sv'
+alias gsl='git stash list'
+alias gspush='git stash push -m'
+alias gspop='git stash pop'
 
 # aws credentials
 alias _unset_aws='unset AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'

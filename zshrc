@@ -51,3 +51,23 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 
 # Initialize the autocompletion
 autoload -Uz compinit && compinit -i
+
+#####
+#
+# History configuration
+# Taken from https://stackoverflow.com/a/26846960/2929889
+#
+#####
+
+#set history size
+export HISTSIZE=10000
+#save history after logout
+export SAVEHIST=10000
+#history file
+export HISTFILE=~/.zhistory
+#append into history file
+setopt INC_APPEND_HISTORY
+#save only one command if 2 common are same and consistent
+setopt HIST_IGNORE_DUPS
+#add timestamp for each entry
+setopt EXTENDED_HISTORY

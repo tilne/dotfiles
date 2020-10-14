@@ -27,7 +27,7 @@ eval "$(pyenv virtualenv-init -)"
 bindkey \^U backward-kill-line
 
 export PROMPT="
-%F{cyan}(%D %*) <%?> [%~] $program %{$fg[default]%}
+%F{white}(%D %*) <%?> [%~] $program %{$fg[default]%}
 %F{magenta} %#%F{default} "
 
 #####

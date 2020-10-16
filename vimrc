@@ -20,6 +20,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-python/python-syntax'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'drewtempelmeyer/palenight.vim'
 
 call vundle#end()
 
@@ -47,7 +48,8 @@ set t_Co=256        " Sets vim to 256 colors
 "colo onedark       " from joshdick/onedark.vim
 "colo OceanicNext   " from mhartington/oceanic-next
 "colo apprentice    " from romainl/Apprentice
-colo viking         " modified version of onedark
+" colo viking         " modified version of onedark
+colo palenight         " modified version of onedark
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

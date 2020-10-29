@@ -2,8 +2,8 @@
 # vi: ft=sh
 alias ll='ls -lG --color=auto'
 alias lla='ll -a --color=auto'
-alias egrep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cache} --exclude '*.pyc'"
-alias grep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cache} --exclude '*.pyc'"
+alias egrep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cache,.tox} --exclude '*.pyc'"
+alias grep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cache,.tox} --exclude '*.pyc'"
 alias ..='cd ..'
 
 # Mac OS hacks

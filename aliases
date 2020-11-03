@@ -12,38 +12,12 @@ alias unmute='sudo osascript -e "set Volume 1"'
 alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
 # parallelcluster
-# shellcheck disable=SC2120
-pls() {
-    local config_file=""
-    local config_arg=""
-    local cmd=""
-    if [[ $# -gt 1 ]]
-    then
-        echo pls [region]
-        return 1
-    elif [[ $# == 1 ]]
-    then
-        config_file=$(new-pcluster-config-with-region.py --region $1)
-        [[ -n $PLS_DEBUG ]] && cat $config_file
-    fi
-    if [[ -n $config_file ]]
-    then
-      config_arg="-c $config_file"
-      [[ -n $PLS_DEBUG ]] && echo $config_arg
-    fi
-    cmd="pcluster list $config_arg"
-    [[ -n $PLS_DEBUG ]] && echo $cmd
-    eval $cmd
-    rm -f $config_file
-}
-getallclusters() {
-  pls | awk '{print $1}'
-}
+alias pls='pcluster list'
 alias pssh='pcluster ssh'
 alias pupdate='pcluster update'
 alias prm='pcluster delete'
 # shellcheck disable=SC2154
-alias prmall='for cluster in $(getallclusters); do prm -nw >/dev/null $cluster; done'
+alias prmall='for cluster in $(pls | awk "{print $1}"); do prm -nw >/dev/null $cluster; done'
 alias pinit='pcluster create'
 alias pstat='pcluster status'
 

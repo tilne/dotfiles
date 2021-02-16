@@ -70,6 +70,10 @@ set splitright
 " prevent automatic addition of newlines
 set nofixendofline
 
+" search down into subfolders
+" provides tab-completion for all file-related tasks
+set path+=**
+
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>

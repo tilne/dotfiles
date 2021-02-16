@@ -52511,7 +52511,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/repos/nord-iterm2/src/xml</string>
+	<string>~/repos/iterm2-material-theme</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -52564,11 +52564,11 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>205 479 735 382 0 0 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 498 620 392 0 0 1920 1057 </string>
+	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1057 0 0 1920 1080 </string>
+	<string>0 0 1920 1057 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>839 301 585 427 0 0 1920 1080 </string>
+	<string>538 234 570 402 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -53228,6 +53228,7 @@
 	<key>NoSyncBFPRecents</key>
 	<array>
 		<string>Source Code Pro for Powerline</string>
+		<string>JetBrains Mono</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -53251,7 +53252,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{569, 798}</string>
+		<string>{206, 728}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -53260,7 +53261,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>600979285.47042501</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>84</integer>
+	<integer>92</integer>
 	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -54137,7 +54138,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-09-25T14:05:43Z</date>
+	<date>2020-11-20T03:16:55Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
@@ -54147,7 +54148,7 @@
 	<key>Secure Input</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>

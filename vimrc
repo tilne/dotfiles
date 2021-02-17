@@ -191,3 +191,11 @@ nm <silent> <F3> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name")
 " item
 let g:vim_markdown_auto_insert_bullets = 0
 let g:vim_markdown_new_list_item_indent = 0
+
+" prevent terminals from disappearing when navigating away from them
+function! HiddenTerminal()
+  :terminal
+  set bufhidden=hide
+endfunction
+command! HiddenTerminal call HiddenTerminal()
+nnoremap <Leader>t :HiddenTerminal<CR>

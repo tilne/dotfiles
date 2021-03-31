@@ -17,9 +17,9 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-python/python-syntax'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'ghifarit53/tokyonight-vim'
 
 call vundle#end()
 
@@ -48,7 +48,8 @@ set t_Co=256        " Sets vim to 256 colors
 "colo OceanicNext   " from mhartington/oceanic-next
 "colo apprentice    " from romainl/Apprentice
 "colo viking         " modified version of onedark
-colo palenight         " modified version of onedark
+"colo palenight         " modified version of onedark
+colo tokyonight
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

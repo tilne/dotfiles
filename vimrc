@@ -20,6 +20,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'ghifarit53/tokyonight-vim'
+Plugin 'ekalinin/Dockerfile.vim'
 
 call vundle#end()
 

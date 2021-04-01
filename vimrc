@@ -21,6 +21,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'ghifarit53/tokyonight-vim'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'vim-python/python-syntax'
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
 
@@ -45,12 +47,12 @@ set ruler           " Cursor location
 set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
-"colo onedark       " from joshdick/onedark.vim
+colo onedark       " from joshdick/onedark.vim
 "colo OceanicNext   " from mhartington/oceanic-next
 "colo apprentice    " from romainl/Apprentice
 "colo viking         " modified version of onedark
 "colo palenight         " modified version of onedark
-colo tokyonight
+"colo tokyonight
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

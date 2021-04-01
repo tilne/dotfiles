@@ -18,8 +18,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'drewtempelmeyer/palenight.vim'
-Plugin 'ghifarit53/tokyonight-vim'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
@@ -47,12 +45,7 @@ set ruler           " Cursor location
 set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
-colo onedark       " from joshdick/onedark.vim
-"colo OceanicNext   " from mhartington/oceanic-next
-"colo apprentice    " from romainl/Apprentice
-"colo viking         " modified version of onedark
-"colo palenight         " modified version of onedark
-"colo tokyonight
+colo onedark        " from joshdick/onedark.vim
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses
@@ -125,8 +118,6 @@ nnoremap <Leader>f :Autoformat<CR>
 nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/.vimrc<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
-nnoremap <Leader>evc :e ~/repos/dotfiles/vim/colors/viking.vim<CR>
-nnoremap <Leader>eva :e ~/repos/dotfiles/vim/autoload/viking.vim<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>

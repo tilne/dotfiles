@@ -164,14 +164,6 @@ function! CommentToggle()
 endfunction
 nnoremap <Leader>c<Space> :call CommentToggle()<CR>
 
-" edit today's status report
-function! EditTodaysStatusReport()
-    execute "edit " . system('status.py print')
-endfunction
-nnoremap <Leader>es :call EditTodaysStatusReport()<CR>
-
-set tags=tags
-
 " polling period for GitGutter, 100 ms instead of default 4 seconds
 set updatetime=100
 

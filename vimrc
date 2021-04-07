@@ -19,8 +19,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'tomasiser/vim-code-dark'
 
 call vundle#end()
 
@@ -45,7 +45,7 @@ set ruler           " Cursor location
 set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
-colo onedark        " from joshdick/onedark.vim
+colo codedark
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

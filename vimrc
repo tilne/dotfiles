@@ -20,7 +20,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'tomasiser/vim-code-dark'
+Plugin 'drewtempelmeyer/palenight.vim'
 
 call vundle#end()
 
@@ -45,7 +45,7 @@ set ruler           " Cursor location
 set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
-colo codedark
+colo palenight
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch == show matches as search progresses

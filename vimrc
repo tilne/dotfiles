@@ -130,8 +130,8 @@ nnoremap <Leader>wc <C-w>c
 nnoremap <Leader>ww :w<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>qq :q<CR>
-nnoremap <Leader>spv :vsp<CR>
-nnoremap <Leader>sph :sp<CR>
+nnoremap <Leader>spv :vsp <bar> :set number<CR>
+nnoremap <Leader>sph :sp <bar> :set number<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gd :Git diff<CR>
 nnoremap <Leader>gcc :Git commit -vs<CR>

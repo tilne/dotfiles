@@ -183,7 +183,7 @@ let g:vim_markdown_new_list_item_indent = 0
 " prevent terminals from disappearing when navigating away from them
 function! HiddenTerminal()
   :terminal
-  set bufhidden=hide
+  set bufhidden=hide nonumber
 endfunction
 command! HiddenTerminal call HiddenTerminal()
 nnoremap <Leader>t :HiddenTerminal<CR>

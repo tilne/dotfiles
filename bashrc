@@ -14,7 +14,7 @@ ssh-add &>/dev/null ~/.ssh/tilne.pem
 source ~/.iterm2_shell_integration.bash
 
 # pyenv initialization
-export PATH="/Users/tilne/.pyenv/bin:$PATH"
+export PATH="/Users/$(whoami)/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

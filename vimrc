@@ -141,6 +141,8 @@ nnoremap <Leader>gpf :Git push --force<CR>
 nnoremap <Leader>glg :Git log<CR>
 nnoremap <Leader>pfn /^def <CR>
 nnoremap <Leader>pfp ?^def <CR>
+nnoremap <Leader>syn :set number<CR>
+nnoremap <Leader>snn :set nonumber<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

@@ -146,6 +146,8 @@ nnoremap <Leader>pfn /^def <CR>
 nnoremap <Leader>pfp ?^def <CR>
 nnoremap <Leader>syn :set number<CR>
 nnoremap <Leader>snn :set nonumber<CR>
+nnoremap <Leader>cn :cn<CR>
+nnoremap <Leader>cp :cp<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

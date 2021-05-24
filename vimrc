@@ -21,6 +21,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'lambdalisue/fern.vim'
 
 call vundle#end()
 

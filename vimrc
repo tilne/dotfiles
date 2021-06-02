@@ -148,6 +148,9 @@ nnoremap <Leader>syn :set number<CR>
 nnoremap <Leader>snn :set nonumber<CR>
 nnoremap <Leader>cn :cn<CR>
 nnoremap <Leader>cp :cp<CR>
+nnoremap <Leader>ti :tabnew<CR>
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>tp :tabprevious<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
@@ -193,4 +196,4 @@ function! HiddenTerminal()
   set bufhidden=hide nonumber
 endfunction
 command! HiddenTerminal call HiddenTerminal()
-nnoremap <Leader>t :HiddenTerminal<CR>
+nnoremap <Leader>tt :HiddenTerminal<CR>

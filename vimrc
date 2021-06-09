@@ -53,7 +53,7 @@ filetype plugin indent on   " Detection of such
 " smartcase == don't care about capitalization in search
 " hlsearch  == higlight search matches
 set incsearch smartcase hlsearch
-set number          " number lines
+set nonumber        " don't number lines
 set autoread        " if local file is modified, read it into vim immediately
 set encoding=utf-8  " unicode
 set scrollback=20000  " 20k lines of scrollback buffer in terminal emulator
@@ -131,8 +131,8 @@ nnoremap <Leader>wc <C-w>c
 nnoremap <Leader>ww :w<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>qq :q<CR>
-nnoremap <Leader>spv :vsp <bar> :set number<CR>
-nnoremap <Leader>sph :sp <bar> :set number<CR>
+nnoremap <Leader>spv :vsp <bar> :set nonumber<CR>
+nnoremap <Leader>sph :sp <bar> :set nonumber<CR>
 nnoremap <Leader>sptv :vsp <bar> :HiddenTerminal<CR>
 nnoremap <Leader>spth :sp <bar> :HiddenTerminal<CR>
 nnoremap <Leader>gs :Gstatus<CR>

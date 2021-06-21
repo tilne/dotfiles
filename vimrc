@@ -139,6 +139,11 @@ nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>gd :Git diff<CR>
 nnoremap <Leader>gcc :Git commit -vs<CR>
 nnoremap <Leader>gca :Git commit -v --amend<CR>
+nnoremap <Leader>gfu :Git fetch upstream<CR>
+" TODO: is there a way to make the following default
+"       to rebasing on a branch with the same name
+"       as the one currently checked out?
+nnoremap <Leader>gfr :Git rebase upstream
 nnoremap <Leader>gpp :Git push<CR>
 nnoremap <Leader>gpf :Git push --force<CR>
 nnoremap <Leader>glg :Git log<CR>

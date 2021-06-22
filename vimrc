@@ -116,7 +116,6 @@ nnoremap <F2> =
 let mapleader = " "
 
 " Various shortcut mappings
-nnoremap <Leader>f :Autoformat<CR>
 nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/.vimrc<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>

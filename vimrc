@@ -156,6 +156,10 @@ nnoremap <Leader>cp :cp<CR>
 nnoremap <Leader>ti :tabnew<CR>
 nnoremap <Leader>tn :tabnext<CR>
 nnoremap <Leader>tp :tabprevious<CR>
+" netrw mappings
+nnoremap <Leader>fee :Explore<CR>
+nnoremap <Leader>fse :Sexplore<CR>
+nnoremap <Leader>fve :Vexplore<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
@@ -202,3 +206,18 @@ function! HiddenTerminal()
 endfunction
 command! HiddenTerminal call HiddenTerminal()
 nnoremap <Leader>tt :HiddenTerminal<CR>
+
+" netrw configs
+" https://shapeshed.com/vim-netrw/
+"
+" hide the banner
+let g:netrw_banner = 0
+" set list style
+" 0: thin listing (one file per line)
+" 1: long listing (one file per line with time
+"    stamp information and file size)
+" 2: wide listing (multiple files in columns)
+" 3: tree style listing
+let g:netrw_liststyle = 3
+" set width of directory explorer to 25% of page
+let g:netrw_winsize = 25

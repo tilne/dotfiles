@@ -147,6 +147,7 @@ nnoremap <Leader>gfr :Git rebase upstream
 nnoremap <Leader>gpp :Git push<CR>
 nnoremap <Leader>gpf :Git push --force<CR>
 nnoremap <Leader>glg :Git log<CR>
+nnoremap <Leader>gb :Git blame<CR>
 nnoremap <Leader>pfn /^def <CR>
 nnoremap <Leader>pfp ?^def <CR>
 nnoremap <Leader>syn :set number<CR>

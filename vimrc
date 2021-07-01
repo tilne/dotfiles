@@ -152,7 +152,9 @@ nnoremap <Leader>pfn /^def <CR>
 nnoremap <Leader>pfp ?^def <CR>
 nnoremap <Leader>syn :set number<CR>
 nnoremap <Leader>snn :set nonumber<CR>
+nnoremap <Leader>cc :cclose<CR>
 nnoremap <Leader>cn :cn<CR>
+nnoremap <Leader>co :copen<CR>
 nnoremap <Leader>cp :cp<CR>
 nnoremap <Leader>ti :tabnew<CR>
 nnoremap <Leader>tn :tabnext<CR>

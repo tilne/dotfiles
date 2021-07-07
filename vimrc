@@ -23,6 +23,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'lambdalisue/fern.vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 

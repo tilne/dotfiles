@@ -24,6 +24,7 @@ Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'lambdalisue/fern.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'pedrohdz/vim-yaml-folds'
 
 call vundle#end()
 

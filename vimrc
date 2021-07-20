@@ -52,10 +52,11 @@ set t_Co=256        " Sets vim to 256 colors
 colo onedark
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
-" incsearch == show matches as search progresses
-" smartcase == don't care about capitalization in search
-" hlsearch  == higlight search matches
-set incsearch smartcase hlsearch
+" incsearch  == show matches as search progresses
+" ignorecase == ignore case in typed search patterns
+" smartcase  == don't care about capitalization in search
+" hlsearch   == higlight search matches
+set incsearch ignorecase smartcase hlsearch
 set nonumber        " don't number lines
 set autoread        " if local file is modified, read it into vim immediately
 set encoding=utf-8  " unicode

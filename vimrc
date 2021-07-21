@@ -147,6 +147,7 @@ nnoremap <Leader>gfu :Git fetch upstream<CR>
 "       to rebasing on a branch with the same name
 "       as the one currently checked out?
 nnoremap <Leader>gfr :Git rebase upstream
+nnoremap <Leader>gfd :Git rebase upstream/develop<CR>
 nnoremap <Leader>gpp :Git push<CR>
 nnoremap <Leader>gpf :Git push --force<CR>
 nnoremap <Leader>glg :Git log<CR>

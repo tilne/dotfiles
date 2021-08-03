@@ -173,6 +173,7 @@ nnoremap <Leader>fve :Vexplore<CR>
 autocmd FileType c,cpp,java,javascript,scala     let b:comment_leader = '//'
 autocmd FileType zsh,sh,ruby,python              let b:comment_leader = '#'
 autocmd FileType conf,fstab,make,tmux            let b:comment_leader = '#'
+autocmd FileType yaml                            let b:comment_leader = '#'
 autocmd FileType tex                             let b:comment_leader = '%'
 autocmd FileType mail                            let b:comment_leader = '>'
 autocmd FileType vim                             let b:comment_leader = '"'

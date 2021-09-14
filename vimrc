@@ -138,7 +138,7 @@ nnoremap <Leader>spv :vsp <bar> :set nonumber<CR>
 nnoremap <Leader>sph :sp <bar> :set nonumber<CR>
 nnoremap <Leader>sptv :vsp <bar> :HiddenTerminal<CR>
 nnoremap <Leader>spth :sp <bar> :HiddenTerminal<CR>
-nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gs :Git<CR>
 nnoremap <Leader>gd :Git diff<CR>
 nnoremap <Leader>gcc :Git commit -vs<CR>
 nnoremap <Leader>gca :Git commit -v --amend<CR>

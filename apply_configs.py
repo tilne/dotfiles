@@ -119,6 +119,7 @@ def create_symlinks(clobber=False):
         "alacritty.yml": "~/.config/alacritty/alacritty.yml",
         "gitconfig": "~/.gitconfig",
         "gitignore": "~/.gitignore",
+        "fish": "~/.config/fish",
     }
     for repo_file, link_path in symlinks.items():
         link_if_needed(os.path.join(REPO_DIR, repo_file), os.path.expanduser(link_path), clobber)

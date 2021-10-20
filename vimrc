@@ -112,9 +112,6 @@ autocmd BufEnter * :syntax sync fromstart
 " Set max line width for markdown files
 "au BufRead,BufNewFile *.md setlocal textwidth=100
 
-" F2 sets all windows to equal width
-nnoremap <F2> =
-
 " remap leader key to space
 let mapleader = " "
 

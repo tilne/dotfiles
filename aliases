@@ -6,21 +6,6 @@ alias egrep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cach
 alias grep="egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.mypy_cache,.tox} --exclude '*.pyc'"
 alias ..='cd ..'
 
-# Mac OS hacks
-alias mute='sudo osascript -e "set Volume 0"'
-alias unmute='sudo osascript -e "set Volume 1"'
-alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
-
-# parallelcluster
-alias pls='pcluster list'
-alias pssh='pcluster ssh'
-alias pupdate='pcluster update'
-alias prm='pcluster delete'
-# shellcheck disable=SC2154
-alias prmall='for cluster in $(pls | awk "{print $1}"); do prm -nw >/dev/null $cluster; done'
-alias pinit='pcluster create'
-alias pstat='pcluster status'
-
 # git
 alias &>/dev/null gl && unalias gl
 gl() {
@@ -46,9 +31,6 @@ alias _unset_aws='unset AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_K
 alias tas='tmux a -t screenalive'
 alias tad='tmux a -t dev'
 alias tl='tmux ls'
-
-# copy to clipboard the command used to start a bash shell on container named jenkins
-alias getShellOnJenkinsCommand='echo docker container exec -u 0 -it jenkins bash | pbcopy'
 
 # Start neovim and immediately open terminal emulator
 alias vimt="nvim  -c ':HiddenTerminal'"

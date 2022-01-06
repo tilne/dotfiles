@@ -1,6 +1,10 @@
+# PATH
+fish_add_path -a ~/.pyenv/bin
+
 # pyenv
 status --is-interactive; and source (pyenv init -| psub); and source (pyenv virtualenv-init -| psub)
 test -z "$PYENV_VIRTUAL_ENV"; and pyenv activate develop
+fish_add_path -a ~/.pyenv/shims
 
 # nvm
 set -x NVM_DIR ~/.nvm

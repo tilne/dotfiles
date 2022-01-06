@@ -56,20 +56,20 @@ install_pyenv() {
 }
 
 
-get_latest_pyenv_38_version() {
-  pyenv install --list | grep -E '^\s+3.8' | tail -n1
+get_latest_pyenv_3_10_version() {
+  pyenv install --list | grep -E '^\s+3.10' | tail -n1
 }
 
 
 create_develop_virtualenv() {
-  local latest_38_version
+  local python_version
   export PATH="${HOME}/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
   if ! pyenv virtualenvs | grep -E &> /dev/null '\s+develop\s+'; then
-    latest_38_version="$(get_latest_pyenv_38_version)"
-    pyenv install "${latest_38_version}"
-    pyenv virtualenv "${latest_38_version}" develop
+    python_version="$(get_latest_pyenv_3_10_version)"
+    pyenv install "${python_version}"
+    pyenv virtualenv "${python_version}" develop
   fi
   pyenv activate develop
   pip install -r requirements.txt  # assumes script is run from dotfiles dir

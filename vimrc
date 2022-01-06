@@ -119,7 +119,7 @@ let mapleader = " "
 nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/.vimrc<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
-nnoremap <Leader>ea :e ~/repos/dotfiles/alacritty.yml<CR>
+nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>
 nnoremap <Leader>eg :e ~/repos/dotfiles/gitconfig<CR>

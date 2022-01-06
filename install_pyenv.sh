@@ -49,6 +49,8 @@ install_pyenv() {
       echo >&2 "${PYENV_ROOT} already exists and CLOBBER was not set."
       exit 1
     fi
+  else
+    git clone "${PYENV_GIT_URL}" "${PYENV_ROOT}"
   fi
   [ -d "${VIRTUALENV_PLUGIN_DIR}" ] || git clone https://github.com/pyenv/pyenv-virtualenv.git "${VIRTUALENV_PLUGIN_DIR}"
 }

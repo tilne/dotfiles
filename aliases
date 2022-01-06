@@ -49,3 +49,6 @@ alias tl='tmux ls'
 
 # copy to clipboard the command used to start a bash shell on container named jenkins
 alias getShellOnJenkinsCommand='echo docker container exec -u 0 -it jenkins bash | pbcopy'
+
+# Start neovim and immediately open terminal emulator
+alias vimt="nvim  -c ':HiddenTerminal'"

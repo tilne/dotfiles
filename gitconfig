@@ -1,6 +1,6 @@
 # vim:ft=gitconfig
 [user]
-	email = tilne@amazon.com
+	email = tim.lane@invitae.com
 	name = Tim Lane
 [color]
 	ui = auto

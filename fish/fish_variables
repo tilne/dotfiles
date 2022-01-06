@@ -3,7 +3,7 @@
 SETUVAR --export EDITOR:nvim
 SETUVAR PYENV_VIRTUALENV_DISABLE_PROMPT:1
 SETUVAR --export PYENV_VIRTUAL_ENV_DISABLE_PROMPT:1
-SETUVAR --export PYTHONSTARTUP:/Users/tilne/\x2epythonrc
+SETUVAR --export PYTHONSTARTUP:/Users/tim.lane/\x2epythonrc
 SETUVAR --export TMPDIR:/tmp
 SETUVAR --export VIRTUAL_ENV_DISABLE_PROMPT:1
 SETUVAR __fish_initialized:3100
@@ -36,5 +36,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR --export fish_user_paths:/Users/tilne/\x2erbenv/bin\x1e/usr/local/opt/coreutils/libexec/gnubin\x1e/Users/tilne/\x2epyenv/bin\x1e/usr/local/bin\x1e/Users/tilne/\x2etoolbox/bin\x1e/Users/tilne/bin\x1e/Users/tilne/repos/tilne\x2dutils
+SETUVAR --export fish_user_paths:/Users/tim.lane/\x2erbenv/bin\x1e/usr/local/opt/coreutils/libexec/gnubin\x1e/Users/tim.lane/\x2epyenv/bin\x1e/usr/local/bin\x1e/Users/tim.lane/\x2etoolbox/bin\x1e/Users/tim.lane/bin\x1e/Users/tim.lane/repos/tilne\x2dutils\x1e/Users/tim\x2elane/\x2epyenv/bin\x1e/Users/tim\x2elane/\x2epyenv/shims
 SETUVAR tmpdir:/tmp

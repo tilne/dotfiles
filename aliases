@@ -34,3 +34,19 @@ alias tl='tmux ls'
 
 # Start neovim and immediately open terminal emulator
 alias vimt="nvim  -c ':HiddenTerminal'"
+
+# Docker compose aliases.
+# Taken from https://github.com/jfroom/oh-my-zsh/blob/master/plugins/docker-compose/docker-compose.plugin.zsh
+alias dco='docker-compose'
+alias dcb='docker-compose build'
+alias dce='docker-compose exec'
+alias dcps='docker-compose ps'
+alias dcrestart='docker-compose restart'
+alias dcrm='docker-compose rm'
+alias dcr='docker-compose run'
+alias dcstop='docker-compose stop'
+alias dcup='docker-compose up'
+alias dcdn='docker-compose down'
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
+alias dcdua='docker-compose down; docker-compose up -d; docker attach '

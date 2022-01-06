@@ -97,7 +97,7 @@ def link_if_needed(target, path, clobber=False):
             logging.info("File already exists at {path}. Removing it in order to make link to {target}.")
             os.remove(path)
         else:
-            raise Exception("File already exists at {path}. Can't make link to {target}.")
+            raise Exception(f"File already exists at {path}. Can't make link to {target}.")
     os.symlink(target, path)
 
 

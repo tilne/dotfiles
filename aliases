@@ -22,6 +22,7 @@ alias gspush='git stash push -m'
 alias gspop='git stash pop'
 alias gco='git checkout'
 alias gpush='git push'
+alias gpf='git push --force'
 alias gsdrop='git stash drop'
 alias gshow='git show'
 

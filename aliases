@@ -23,6 +23,7 @@ alias gspop='git stash pop'
 alias gco='git checkout'
 alias gpush='git push'
 alias gsdrop='git stash drop'
+alias gshow='git show'
 
 # aws credentials
 alias _unset_aws='unset AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'

@@ -26,6 +26,7 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'sainnhe/everforest'
 Plugin 'pangloss/vim-javascript'
 Plugin 'pedrohdz/vim-yaml-folds'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
@@ -52,6 +53,7 @@ set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
 let g:everforest_background = 'hard'
 colo everforest
+let g:airline_theme = 'everforest'
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such
 " incsearch  == show matches as search progresses

@@ -105,7 +105,8 @@ def create_symlinks(clobber=False):
     """Create desired symlinks for config files."""
     symlinks = {
         "vim": "~/.vim",
-        "vimrc": "~/.vimrc",
+        "vimrc": "~/.config/nvim/vimrc",
+        "init.vim": "~/.config/nvim/init.vim",
         "zshrc": "~/.zshrc",
         "aliases": "~/.aliases",
         "bashrc": "~/.bashrc",

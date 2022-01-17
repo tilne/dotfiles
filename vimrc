@@ -121,8 +121,9 @@ let mapleader = " "
 
 " Various shortcut mappings
 nnoremap <Leader>n :noh<CR>
-nnoremap <Leader>sv :so ~/.vimrc<CR>
+nnoremap <Leader>sv :so ~/repos/dotfiles/init.vim<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
+nnoremap <Leader>evn :e ~/repos/dotfiles/init.vim<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>

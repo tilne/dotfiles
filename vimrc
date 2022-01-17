@@ -235,3 +235,7 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 " set width of directory explorer to 25% of page
 let g:netrw_winsize = 25
+
+" Disable COC transparent cursor feature in order to avoid losing the cursor when
+" ungracefully leaving one of the CoC menus.
+let g:coc_disable_transparent_cursor = 1

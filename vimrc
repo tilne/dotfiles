@@ -27,6 +27,7 @@ Plugin 'sainnhe/everforest'
 Plugin 'pangloss/vim-javascript'
 Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'vim-airline/vim-airline'
+Plugin 'neoclide/coc.nvim'
 
 call vundle#end()
 
@@ -52,6 +53,7 @@ set title           " Screen title updates to open buffer
 set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
 let g:everforest_background = 'hard'
+let g:everforest_diagnostic_text_highlight = 1
 colo everforest
 let g:airline_theme = 'everforest'
 syntax enable               " Syntax highlighting
@@ -124,6 +126,7 @@ nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/repos/dotfiles/init.vim<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
 nnoremap <Leader>evn :e ~/repos/dotfiles/init.vim<CR>
+nnoremap <Leader>evc :e ~/repos/dotfiles/coc.vim<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>

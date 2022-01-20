@@ -152,6 +152,8 @@ nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 nnoremap <silent><nowait> <space>S  :<C-u>CocList -I symbols<cr>
 " List buffers
 nnoremap <silent><nowait> <space>b  :<C-u>CocList buffers<cr>
+" List files
+nnoremap <silent><nowait> <space>f  :<C-u>CocList files<cr>
 " Do default action for next item.
 nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.

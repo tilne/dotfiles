@@ -157,7 +157,8 @@ nnoremap <Leader>grm :Git rebase origin/main<CR>
 nnoremap <Leader>gpp :Git push<CR>
 nnoremap <Leader>gpf :Git push --force<CR>
 nnoremap <Leader>glg :Git log<CR>
-nnoremap <Leader>gb :Git blame<CR>
+nnoremap <Leader>gbl :Git blame<CR>
+nnoremap <Leader>gbr :Git branch<CR>
 nnoremap <Leader>pfn /^def <CR>
 nnoremap <Leader>pfp ?^def <CR>
 nnoremap <Leader>syn :set number<CR>

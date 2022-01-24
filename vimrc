@@ -163,6 +163,9 @@ nnoremap <Leader>pfp ?^def <CR>
 nnoremap <Leader>syn :set number<CR>
 nnoremap <Leader>snn :set nonumber<CR>
 nnoremap <Leader>stn :set number!<CR>
+nnoremap <Leader>srn :set rnu<CR>
+nnoremap <Leader>snr :set nornu<CR>
+nnoremap <Leader>str :set rnu!<CR>
 nnoremap <Leader>cc :cclose<CR>
 nnoremap <Leader>cn :cn<CR>
 nnoremap <Leader>co :copen<CR>

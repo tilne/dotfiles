@@ -145,8 +145,8 @@ nnoremap <Leader>sptv :vsp <bar> :HiddenTerminal<CR>
 nnoremap <Leader>spth :sp <bar> :HiddenTerminal<CR>
 nnoremap <Leader>gs :Git<CR>
 nnoremap <Leader>gd :Git diff<CR>
-nnoremap <Leader>gcc :Git commit -vs<CR>
-nnoremap <Leader>gcn :Git commit -v<CR>
+nnoremap <Leader>gcs :Git commit -vs<CR>
+nnoremap <Leader>gcc :Git commit -v<CR>
 nnoremap <Leader>gca :Git commit -v --amend<CR>
 nnoremap <Leader>gfu :Git fetch upstream<CR>
 " TODO: is there a way to make the following default

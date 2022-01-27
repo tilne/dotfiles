@@ -179,6 +179,8 @@ nnoremap <Leader>tp :tabprevious<CR>
 nnoremap <Leader>fee :Explore<CR>
 nnoremap <Leader>fse :Sexplore<CR>
 nnoremap <Leader>fve :Vexplore<CR>
+" buffer management
+nnoremap <Leader>ls :ls<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim

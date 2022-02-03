@@ -132,6 +132,7 @@ nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>
 nnoremap <Leader>eg :e ~/repos/dotfiles/gitconfig<CR>
+nnoremap <Leader>efn :echo @%<CR>
 nnoremap <Leader>wh <C-w>h
 nnoremap <Leader>wl <C-w>l
 nnoremap <Leader>wj <C-w>j

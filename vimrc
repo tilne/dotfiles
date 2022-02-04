@@ -24,6 +24,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'neoclide/coc.nvim'
 Plugin 'kazhala/close-buffers.nvim'
 Plugin 'rayburgemeestre/phpfolding.vim'
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'nvim-telescope/telescope.nvim'
+Plugin 'nvim-telescope/telescope-fzf-native.nvim'
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 call vundle#end()
 
@@ -123,6 +127,7 @@ nnoremap <Leader>sv :so ~/repos/dotfiles/init.vim<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
 nnoremap <Leader>evn :e ~/repos/dotfiles/init.vim<CR>
 nnoremap <Leader>evc :e ~/repos/dotfiles/coc.vim<CR>
+nnoremap <Leader>evt :e ~/repos/dotfiles/telescope.vim<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>

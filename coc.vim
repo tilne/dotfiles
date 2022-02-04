@@ -82,8 +82,9 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+" Commented out because I'm using these to try out telescope
+" xmap <leader>f  <Plug>(coc-format-selected)
+" nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -153,9 +154,11 @@ nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
 nnoremap <silent><nowait> <space>S  :<C-u>CocList -I symbols<cr>
 " List buffers
-nnoremap <silent><nowait> <space>b  :<C-u>CocList buffers<cr>
+" Commented out because I'm using these to try out telescope
+" nnoremap <silent><nowait> <space>b  :<C-u>CocList buffers<cr>
 " List files
-nnoremap <silent><nowait> <space>f  :<C-u>CocList files<cr>
+" Commented out because I'm using these to try out telescope
+" nnoremap <silent><nowait> <space>f  :<C-u>CocList files<cr>
 " Do default action for next item.
 nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.

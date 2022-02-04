@@ -108,6 +108,7 @@ def create_symlinks(clobber=False):
         "vimrc": "~/.config/nvim/vimrc",
         "init.vim": "~/.config/nvim/init.vim",
         "coc.vim": "~/.config/nvim/coc.vim",
+        "telescope.vim": "~/.config/nvim/telescope.vim",
         "zshrc": "~/.zshrc",
         "aliases": "~/.aliases",
         "bashrc": "~/.bashrc",

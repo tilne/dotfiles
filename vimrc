@@ -23,6 +23,7 @@ Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'vim-airline/vim-airline'
 Plugin 'neoclide/coc.nvim'
 Plugin 'kazhala/close-buffers.nvim'
+Plugin 'rayburgemeestre/phpfolding.vim'
 
 call vundle#end()
 

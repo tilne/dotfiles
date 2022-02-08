@@ -162,3 +162,13 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" grep word under cursor (taken from entry in neoclide/coc-lists faq)
+command! -nargs=+ -complete=custom,s:GrepArgs Rg exe 'CocList grep '.<q-args>
+function! s:GrepArgs(...)
+  let list = ['-S', '-smartcase', '-i', '-ignorecase', '-w', '-word',
+        \ '-e', '-regex', '-u', '-skip-vcs-ignores', '-t', '-extension']
+  return join(list, "\n")
+endfunction
+" Keymapping for grep word under cursor with interactive mode (taken from entry in neoclide/coc-lists faq)
+vnoremap <silent> <Leader>cf y :exe 'CocList -I --input=<C-R>0 grep'<CR>

@@ -243,3 +243,8 @@ let g:netrw_winsize = 25
 " Disable COC transparent cursor feature in order to avoid losing the cursor when
 " ungracefully leaving one of the CoC menus.
 let g:coc_disable_transparent_cursor = 1
+
+" truncate long branch names to a fixed length
+" example: branch 'feature/GIAN-2900-some-extra-stuff'
+"          will be displayed as 'feature/GIAN-2900'
+let g:airline#extensions#branch#displayed_head_limit = 17

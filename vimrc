@@ -153,7 +153,7 @@ nnoremap <Leader>gro :Git rebase origin
 nnoremap <Leader>grm :Git rebase origin/main<CR>
 nnoremap <Leader>gpp :Git push<CR>
 nnoremap <Leader>gpf :Git push --force<CR>
-nnoremap <Leader>glg :Git log -20<CR>
+nnoremap <Leader>glg :Git log -50<CR>
 nnoremap <Leader>gbl :Git blame<CR>
 nnoremap <Leader>gbr :Git branch<CR>
 nnoremap <Leader>pfn /^def <CR>

@@ -16,7 +16,7 @@ set nowritebackup
 "    |hit-enter| prompts.
 "    The value of this option is stored with the tab page, so that each tab
 "    page can have a different value.
-set cmdheight=2
+set cmdheight=1
 
 " Don't pass messages to |ins-completion-menu|.
 " From `:h 'shortmess'`:

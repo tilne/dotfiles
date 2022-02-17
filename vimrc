@@ -248,3 +248,8 @@ let g:coc_disable_transparent_cursor = 1
 " example: branch 'feature/GIAN-2900-some-extra-stuff'
 "          will be displayed as 'feature/GIAN-2900'
 let g:airline#extensions#branch#displayed_head_limit = 17
+
+" Always enable sign column so that git gutter, linter
+" symbols don't cover up line numbers.
+" taken from https://stackoverflow.com/a/68002271
+set signcolumn=yes

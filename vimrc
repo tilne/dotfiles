@@ -24,6 +24,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'neoclide/coc.nvim'
 Plugin 'kazhala/close-buffers.nvim'
 Plugin 'rayburgemeestre/phpfolding.vim'
+Plugin 'EdenEast/nightfox.nvim'
 
 call vundle#end()
 
@@ -50,7 +51,7 @@ set mouse=a         " Enables mouse use in all modes
 set t_Co=256        " Sets vim to 256 colors
 let g:everforest_background = 'hard'
 let g:everforest_diagnostic_text_highlight = 1
-colo everforest
+colo nordfox
 let g:airline_theme = 'everforest'
 syntax enable               " Syntax highlighting
 filetype plugin indent on   " Detection of such

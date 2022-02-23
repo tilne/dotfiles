@@ -17,13 +17,14 @@ Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'sainnhe/everforest'
 Plugin 'pangloss/vim-javascript'
 Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'vim-airline/vim-airline'
 Plugin 'neoclide/coc.nvim'
 Plugin 'kazhala/close-buffers.nvim'
 Plugin 'rayburgemeestre/phpfolding.vim'
+" color schemes
+Plugin 'sainnhe/everforest'
 Plugin 'EdenEast/nightfox.nvim'
 
 call vundle#end()

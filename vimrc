@@ -182,7 +182,8 @@ nnoremap <Leader>ls :ls<CR>
 
 " shortcuts for quick commenting/un-commenting
 " https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim
-autocmd FileType c,cpp,java,javascript,scala,php let b:comment_leader = '//'
+autocmd FileType c,cpp,java,javascript           let b:comment_leader = '//'
+autocmd FileType typescript,scala,php            let b:comment_leader = '//'
 autocmd FileType zsh,sh,ruby,python              let b:comment_leader = '#'
 autocmd FileType conf,fstab,make,tmux            let b:comment_leader = '#'
 autocmd FileType yaml                            let b:comment_leader = '#'

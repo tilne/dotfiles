@@ -32,7 +32,6 @@ def create_directories():
     dir_paths = [
         os.path.expanduser("~/.config/alacritty"),
         os.path.expanduser("~/.emacs.d/eshell"),
-        os.path.expanduser("~/bin"),
     ]
     for path in dir_paths:
         os.makedirs(path, exist_ok=True)
@@ -117,7 +116,7 @@ def create_symlinks(clobber=False):
         "emacs": "~/.emacs",
         "eshell-profile": "~/.emacs.d/eshell/profile",
         "tmux.conf": "~/.tmux.conf",
-        "status.py": "~/bin/status.py",
+        "bin": "~/bin",
         "alacritty.yml": "~/.config/alacritty/alacritty.yml",
         "gitconfig": "~/.gitconfig",
         "gitignore": "~/.gitignore",

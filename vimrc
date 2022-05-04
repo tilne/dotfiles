@@ -146,7 +146,7 @@ nnoremap <Leader>gs :Git<CR>
 nnoremap <Leader>gd :Git diff<CR>
 nnoremap <Leader>gcs :Git commit -vs<CR>
 nnoremap <Leader>gcc :Git commit -v<CR>
-nnoremap <Leader>gca :Git commit -v --amend<CR>
+nnoremap <Leader>gca :Git commit -v --amend --no-verify<CR>
 nnoremap <Leader>gfo :Git fetch origin<CR>
 " TODO: is there a way to make the following default
 "       to rebasing on a branch with the same name

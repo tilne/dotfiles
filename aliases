@@ -11,7 +11,7 @@ alias &>/dev/null gl && unalias gl
 gl() {
   git lg | head -${1:-5}
 }
-alias gfr="git fetch upstream && git rebase upstream/develop"
+alias gfr="git fetch && git rebase upstream/develop"
 alias gs="git status"
 alias gd="git diff"
 alias gb='git branch'

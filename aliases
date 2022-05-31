@@ -52,3 +52,7 @@ alias dcdn='docker-compose down'
 alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
 alias dcdua='docker-compose down; docker-compose up -d; docker attach '
+
+# Clear DNS
+# https://constellix.com/news/how-to-flush-dns-cache-windows-mac
+alias resetdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'

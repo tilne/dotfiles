@@ -25,7 +25,7 @@ alias gpush='git push'
 alias gpf='git push --force'
 alias gsdrop='git stash drop'
 alias gshow='git show'
-alias gswitch='git switch'
+alias gsw='git switch'
 
 # aws credentials
 alias _unset_aws='unset AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN'

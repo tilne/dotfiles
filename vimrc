@@ -256,3 +256,7 @@ let g:airline#extensions#branch#displayed_head_limit = 17
 " symbols don't cover up line numbers.
 " taken from https://stackoverflow.com/a/68002271
 set signcolumn=yes
+
+" Don't check capitalization when spell-checking
+" https://vi.stackexchange.com/a/36373
+set spellcapcheck=

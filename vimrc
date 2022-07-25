@@ -20,7 +20,6 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'pangloss/vim-javascript'
 Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'vim-airline/vim-airline'
-Plugin 'neoclide/coc.nvim'
 Plugin 'kazhala/close-buffers.nvim'
 Plugin 'rayburgemeestre/phpfolding.vim'
 " color schemes
@@ -124,7 +123,6 @@ nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/repos/dotfiles/init.vim<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
 nnoremap <Leader>evn :e ~/repos/dotfiles/init.vim<CR>
-nnoremap <Leader>evc :e ~/repos/dotfiles/coc.vim<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>
@@ -242,10 +240,6 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 " set width of directory explorer to 25% of page
 let g:netrw_winsize = 25
-
-" Disable COC transparent cursor feature in order to avoid losing the cursor when
-" ungracefully leaving one of the CoC menus.
-let g:coc_disable_transparent_cursor = 1
 
 " truncate long branch names to a fixed length
 " example: branch 'feature/GIAN-2900-some-extra-stuff'

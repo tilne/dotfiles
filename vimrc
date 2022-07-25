@@ -21,7 +21,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'vim-airline/vim-airline'
 Plugin 'kazhala/close-buffers.nvim'
-Plugin 'rayburgemeestre/phpfolding.vim'
 " color schemes
 Plugin 'sainnhe/everforest'
 Plugin 'EdenEast/nightfox.nvim'

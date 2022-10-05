@@ -36,7 +36,6 @@ main() {
   parse_args "$@"
   CLOBBER_FLAG=""
   [ "${CLOBBER}" == "true" ] && CLOBBER_FLAG="--clobber"
-  ./install_nvm.sh
   pip install -r requirements.txt
   ./apply_configs.py ${CLOBBER_FLAG}
 }

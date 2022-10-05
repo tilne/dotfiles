@@ -32,6 +32,7 @@ def create_directories():
     dir_paths = [
         os.path.expanduser("~/.config/alacritty"),
         os.path.expanduser("~/.emacs.d/eshell"),
+        os.path.expanduser("~/.config/nvim"),
     ]
     for path in dir_paths:
         os.makedirs(path, exist_ok=True)

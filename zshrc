@@ -20,7 +20,6 @@ source ~/.secrets
 # pyenv initialization
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-export PATH="${HOME}/.pyenv/bin:${HOME}/.pyenv/shims:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

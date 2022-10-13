@@ -72,6 +72,12 @@ setopt HIST_IGNORE_DUPS
 #add timestamp for each entry
 setopt EXTENDED_HISTORY
 
+# Homebrew configuration
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="$CPPFLAGS -I/opt/homebrew/opt/openjdk/include"
+export LDFLAGS="-L/opt/homebrew/opt/openblas/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openblas/include"
+
 # NVM configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm

@@ -10,7 +10,7 @@ fish_add_path -a ~/.pyenv/shims
 set -x NVM_DIR ~/.nvm
 
 # aliases, secrets
-source ~/.secrets
+source ~/.secrets.fish
 
 # Disable tmux status line if running in vscode
 if test "$TERM_PROGRAM" = "vscode"

@@ -1,10 +1,14 @@
 # PATH
-fish_add_path -a ~/.pyenv/bin
+fish_add_path -ga /opt/homebrew/bin
+fish_add_path -ga /opt/homebrew/sbin
+
+# MANPATH
+set -gx MANPATH "$MANPATH:/opt/homebrew/share/man"
 
 # pyenv
+set -gx PYENV_VIRTUALENV_DISABLE_PROMPT 1
 status --is-interactive; and source (pyenv init -| psub); and source (pyenv virtualenv-init -| psub)
 test -z "$PYENV_VIRTUAL_ENV"; and pyenv activate dev
-fish_add_path -a ~/.pyenv/shims
 
 # nvm
 set -x NVM_DIR ~/.nvm

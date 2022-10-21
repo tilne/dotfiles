@@ -24,3 +24,6 @@ end
 
 # set some default AWS envs
 set -x AWS_DEFAULT_REGION us-east-1
+
+# Set editor
+set -gx EDITOR nvim

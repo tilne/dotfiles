@@ -5,6 +5,10 @@ fish_add_path -ga /opt/homebrew/sbin
 # MANPATH
 set -gx MANPATH "$MANPATH:/opt/homebrew/share/man"
 
+# includes and shared libs
+set -gx CPPFLAGS "$CPPFLAGS -I/opt/homebrew/opt/openjdk/include -I/opt/homebrew/Cellar/librdkafka/1.9.2/include -I/opt/homebrew/opt/openblas/include"
+set -gx LDFLAGS "$LDFLAGS -L/opt/homebrew/opt/openblas/lib -I/opt/homebrew/Cellar/librdkafka/1.9.2/lib"
+
 # pyenv
 set -gx PYENV_VIRTUALENV_DISABLE_PROMPT 1
 status --is-interactive; and source (pyenv init -| psub); and source (pyenv virtualenv-init -| psub)

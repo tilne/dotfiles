@@ -1,6 +1,7 @@
 # PATH
 fish_add_path -ga /opt/homebrew/bin
 fish_add_path -ga /opt/homebrew/sbin
+fish_add_path -ga $HOME/bin
 
 # MANPATH
 set -gx MANPATH "$MANPATH:/opt/homebrew/share/man"

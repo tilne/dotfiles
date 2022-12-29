@@ -1,2 +1,2 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 caffeinate -disu ping &> /dev/null localhost

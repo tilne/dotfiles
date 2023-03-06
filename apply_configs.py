@@ -106,8 +106,7 @@ def create_symlinks(clobber=False):
     symlinks = {
         "vim": "~/.vim",
         "vimrc": "~/.config/nvim/vimrc",
-        "init.vim": "~/.config/nvim/init.vim",
-        "coc.vim": "~/.config/nvim/coc.vim",
+        "init.lua": "~/.config/nvim/init.lua",
         "zshrc": "~/.zshrc",
         "aliases": "~/.aliases",
         "bashrc": "~/.bashrc",

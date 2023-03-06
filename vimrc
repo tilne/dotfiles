@@ -24,6 +24,7 @@ Plugin 'kazhala/close-buffers.nvim'
 " color schemes
 Plugin 'sainnhe/everforest'
 Plugin 'EdenEast/nightfox.nvim'
+Plugin 'neovim/nvim-lspconfig'
 
 call vundle#end()
 
@@ -119,9 +120,9 @@ let mapleader = " "
 
 " Various shortcut mappings
 nnoremap <Leader>n :noh<CR>
-nnoremap <Leader>sv :so ~/repos/dotfiles/init.vim<CR>
+nnoremap <Leader>sv :so ~/repos/dotfiles/init.lua<CR>
 nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
-nnoremap <Leader>evn :e ~/repos/dotfiles/init.vim<CR>
+nnoremap <Leader>evn :e ~/repos/dotfiles/init.lua<CR>
 nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
 nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
 nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>

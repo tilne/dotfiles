@@ -83,9 +83,32 @@ require'lspconfig'.pylsp.setup{
 
 -- Telescope keymaps
 local telescope_builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', telescope_builtin.find_files, {})
-vim.keymap.set('n', '<leader>fF', telescope_builtin.git_files, {})
-vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
--- TODO: enable this after looking more into use of help_tags
--- vim.keymap.set('n', '<leader>fh', telescope_builtin.help_tags, {})
+local telescope_keymaps = {
+  {lhs = '<leader>ff', rhs = telescope_builtin.find_files},
+  {lhs = '<leader>fF', rhs = telescope_builtin.git_files},
+  {lhs = '<leader>fg', rhs = telescope_builtin.live_grep},
+  {lhs = '<leader>fb', rhs = telescope_builtin.buffers},
+  -- TODO: enable this after looking more into use of help_tags
+  -- {lhs = '<leader>fh', rhs = telescope_builtin.help_tags}
+}
+for _, keymap in ipairs(telescope_keymaps) do
+  vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
+end
+-- Git keymaps
+local git_keymaps = {
+  {lhs = '<leader>gs', rhs = ':Git<CR>'},
+  {lhs = '<leader>gd', rhs = ':Git diff<CR>'},
+  {lhs = '<leader>gcs', rhs = ':Git commit -vs<CR>'},
+  {lhs = '<leader>gcc', rhs = ':Git commit -v<CR>'},
+  {lhs = '<leader>gca', rhs = ':Git commit -v --amend --no-verify<CR>'},
+  {lhs = '<leader>gfo', rhs = ':Git fetch origin<CR>'},
+  {lhs = '<leader>gro', rhs = ':Git rebase origin'},
+  {lhs = '<leader>grm', rhs = ':Git rebase origin/main<CR>'},
+  {lhs = '<leader>gpp', rhs = ':Git push<CR>'},
+  {lhs = '<leader>gpf', rhs = ':Git push --force<CR>'},
+  {lhs = '<leader>glg', rhs = ':Git log -50<CR>'},
+  {lhs = '<leader>gbl', rhs = ':Git blame<CR>'},
+}
+for _, keymap in ipairs(git_keymaps) do
+  vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
+end

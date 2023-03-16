@@ -143,22 +143,6 @@ nnoremap <Leader>spv :vsp <bar> :set nonumber<CR>
 nnoremap <Leader>sph :sp <bar> :set nonumber<CR>
 nnoremap <Leader>sptv :vsp <bar> :HiddenTerminal<CR>
 nnoremap <Leader>spth :sp <bar> :HiddenTerminal<CR>
-nnoremap <Leader>gs :Git<CR>
-nnoremap <Leader>gd :Git diff<CR>
-nnoremap <Leader>gcs :Git commit -vs<CR>
-nnoremap <Leader>gcc :Git commit -v<CR>
-nnoremap <Leader>gca :Git commit -v --amend --no-verify<CR>
-nnoremap <Leader>gfo :Git fetch origin<CR>
-" TODO: is there a way to make the following default
-"       to rebasing on a branch with the same name
-"       as the one currently checked out?
-nnoremap <Leader>gro :Git rebase origin
-nnoremap <Leader>grm :Git rebase origin/main<CR>
-nnoremap <Leader>gpp :Git push<CR>
-nnoremap <Leader>gpf :Git push --force<CR>
-nnoremap <Leader>glg :Git log -50<CR>
-nnoremap <Leader>gbl :Git blame<CR>
-nnoremap <Leader>gbr :Git branch<CR>
 nnoremap <Leader>pfn /^def <CR>
 nnoremap <Leader>pfp ?^def <CR>
 nnoremap <Leader>syn :set number<CR>

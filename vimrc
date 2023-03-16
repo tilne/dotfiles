@@ -25,6 +25,9 @@ Plugin 'kazhala/close-buffers.nvim'
 Plugin 'sainnhe/everforest'
 Plugin 'EdenEast/nightfox.nvim'
 Plugin 'neovim/nvim-lspconfig'
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'nvim-telescope/telescope.nvim'
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 call vundle#end()
 

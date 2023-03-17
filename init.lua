@@ -97,13 +97,9 @@ end
 -- Git keymaps
 local git_keymaps = {
   {lhs = '<leader>gs', rhs = ':Git<CR>'},
-  {lhs = '<leader>gd', rhs = ':Git diff<CR>'},
-  {lhs = '<leader>gcs', rhs = ':Git commit -vs<CR>'},
   {lhs = '<leader>gcc', rhs = ':Git commit -v<CR>'},
-  {lhs = '<leader>gca', rhs = ':Git commit -v --amend --no-verify<CR>'},
+  {lhs = '<leader>gca', rhs = ':Git commit -v --amend<CR>'},
   {lhs = '<leader>gfo', rhs = ':Git fetch origin<CR>'},
-  {lhs = '<leader>gro', rhs = ':Git rebase origin'},
-  {lhs = '<leader>grm', rhs = ':Git rebase origin/main<CR>'},
   {lhs = '<leader>gpp', rhs = ':Git push<CR>'},
   {lhs = '<leader>gpf', rhs = ':Git push --force<CR>'},
   {lhs = '<leader>glg', rhs = ':Git log -50<CR>'},

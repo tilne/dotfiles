@@ -87,7 +87,8 @@ local telescope_keymaps = {
   {lhs = '<leader>ff', rhs = telescope_builtin.find_files},
   {lhs = '<leader>fF', rhs = telescope_builtin.git_files},
   {lhs = '<leader>fg', rhs = telescope_builtin.live_grep},
-  {lhs = '<leader>fb', rhs = telescope_builtin.buffers},
+  {lhs = '<leader>fB', rhs = telescope_builtin.buffers},
+  {lhs = '<leader>fb', rhs = telescope_builtin.git_branches},
   -- TODO: enable this after looking more into use of help_tags
   -- {lhs = '<leader>fh', rhs = telescope_builtin.help_tags}
 }

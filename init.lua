@@ -113,3 +113,8 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   }
 }
+
+-- code folding via tree-sitter
+-- https://www.jmaguire.tech/posts/treesitter_folding/
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

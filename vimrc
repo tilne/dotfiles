@@ -4,9 +4,6 @@ filetype plugin on
 " supposedly, give access to system clipboard
 set clipboard=unnamed
 
-set foldmethod=syntax
-set nofoldenable    " disable folding on startup
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -18,7 +15,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'pangloss/vim-javascript'
-Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'vim-airline/vim-airline'
 Plugin 'kazhala/close-buffers.nvim'
 " color schemes
@@ -241,3 +237,7 @@ set signcolumn=yes
 " Don't check capitalization when spell-checking
 " https://vi.stackexchange.com/a/36373
 set spellcapcheck=
+
+" Open all folds when opening file
+" https://www.jmaguire.tech/posts/treesitter_folding/
+autocmd BufReadPost,FileReadPost * normal zR

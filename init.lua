@@ -109,3 +109,10 @@ local git_keymaps = {
 for _, keymap in ipairs(git_keymaps) do
   vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
 end
+
+-- tree-sitter
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true
+  }
+}

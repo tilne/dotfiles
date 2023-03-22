@@ -63,19 +63,15 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<Leader>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
-local max_line_length = 120
+-- Configure pylsp
 require'lspconfig'.pylsp.setup{
+  cmd = { "pylsp", "--verbose" },
   on_attach = on_attach,
   settings = {
     pylsp = {
       plugins = {
-        flake8 = {
-          maxLineLength = max_line_length
-        },
-        pycodestyle = {
-          ignore = {'E266'},
-          maxLineLength = max_line_length
-        }
+        flake8 = {enabled = false},
+        pycodestyle = {enabled = false}
       }
     }
   }

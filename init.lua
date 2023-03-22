@@ -90,8 +90,8 @@ local telescope_keymaps = {
   {lhs = '<leader>fB', rhs = telescope_builtin.buffers},
   {lhs = '<leader>fb', rhs = function () telescope_builtin.git_branches {show_remote_tracking_branches=false} end },
   {lhs = '<leader>Fb', rhs = telescope_builtin.git_branches},
-  -- TODO: enable this after looking more into use of help_tags
-  -- {lhs = '<leader>fh', rhs = telescope_builtin.help_tags}
+  {lhs = '<leader>fh', rhs = telescope_builtin.help_tags},
+  {lhs = '<leader>f/', rhs = telescope_builtin.current_buffer_fuzzy_find}
 }
 for _, keymap in ipairs(telescope_keymaps) do
   vim.keymap.set('n', keymap.lhs, keymap.rhs, {})

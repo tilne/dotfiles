@@ -240,5 +240,5 @@ set spellcapcheck=
 
 " Open all folds when opening file
 " https://www.jmaguire.tech/posts/treesitter_folding/
-autocmd BufReadPost,FileReadPost * normal zR
-" set nofoldenable                     " Disable folding at startup.
+" autocmd BufReadPost,FileReadPost * normal zR
+set nofoldenable                     " Disable folding at startup.

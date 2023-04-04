@@ -120,12 +120,6 @@ let mapleader = " "
 " Various shortcut mappings
 nnoremap <Leader>n :noh<CR>
 nnoremap <Leader>sv :so ~/repos/dotfiles/init.lua<CR>
-nnoremap <Leader>evv :e ~/repos/dotfiles/vimrc<CR>
-nnoremap <Leader>evn :e ~/repos/dotfiles/init.lua<CR>
-nnoremap <Leader>ea :e ~/repos/dotfiles/aliases<CR>
-nnoremap <Leader>ez :e ~/repos/dotfiles/zshrc<CR>
-nnoremap <Leader>et :e ~/repos/dotfiles/tmux.conf<CR>
-nnoremap <Leader>eg :e ~/repos/dotfiles/gitconfig<CR>
 nnoremap <Leader>efn :echo @%<CR>
 nnoremap <Leader>wh <C-w>h
 nnoremap <Leader>wl <C-w>l

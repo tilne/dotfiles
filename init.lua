@@ -107,6 +107,16 @@ for _, keymap in ipairs(git_keymaps) do
   vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
 end
 
+-- File editing keymaps
+local file_editing_keymaps = {
+  {lhs = '<Leader>evv', rhs = ':e ~/repos/dotfiles/vimrc<CR>'},
+  {lhs = '<Leader>evn', rhs = ':e ~/repos/dotfiles/init.lua<CR>'},
+  {lhs = '<Leader>et', rhs = ':e ~/repos/dotfiles/tmux.conf<CR>'},
+  {lhs = '<Leader>eg', rhs = ':e ~/repos/dotfiles/gitconfig<CR>'},
+}
+for _, keymap in ipairs(file_editing_keymaps) do
+  vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
+end
 -- tree-sitter
 require'nvim-treesitter.configs'.setup {
   highlight = {

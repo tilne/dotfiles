@@ -113,6 +113,7 @@ local file_editing_keymaps = {
   {lhs = '<Leader>evn', rhs = ':e ~/repos/dotfiles/init.lua<CR>'},
   {lhs = '<Leader>et', rhs = ':e ~/repos/dotfiles/tmux.conf<CR>'},
   {lhs = '<Leader>eg', rhs = ':e ~/repos/dotfiles/gitconfig<CR>'},
+  {lhs = '<Leader>el', rhs = ':e ~/repos/daily-logs/' .. os.date('%Y.%m.%d') .. '.md<CR>'},
 }
 for _, keymap in ipairs(file_editing_keymaps) do
   vim.keymap.set('n', keymap.lhs, keymap.rhs, {})

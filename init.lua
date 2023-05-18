@@ -87,7 +87,8 @@ local telescope_keymaps = {
   {lhs = '<leader>fb', rhs = function () telescope_builtin.git_branches {show_remote_tracking_branches=false} end },
   {lhs = '<leader>Fb', rhs = telescope_builtin.git_branches},
   {lhs = '<leader>fh', rhs = telescope_builtin.help_tags},
-  {lhs = '<leader>f/', rhs = telescope_builtin.current_buffer_fuzzy_find}
+  {lhs = '<leader>f/', rhs = telescope_builtin.current_buffer_fuzzy_find},
+  {lhs = '<leader>fd', rhs = function() telescope_builtin.diagnostics {bufnr=0} end },
 }
 for _, keymap in ipairs(telescope_keymaps) do
   vim.keymap.set('n', keymap.lhs, keymap.rhs, {})

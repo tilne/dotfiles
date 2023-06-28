@@ -119,6 +119,15 @@ local file_editing_keymaps = {
 for _, keymap in ipairs(file_editing_keymaps) do
   vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
 end
+-- Navigation keymaps
+local navigation_keymaps = {
+  {lhs = '<Leader>cd-', rhs = ':chdir -<CR>:pwd<CR>'},
+  {lhs = '<Leader>cd<Space>', rhs = ':chdir '},
+  {lhs = '<Leader>cdp', rhs = ':pwd<CR>'},
+}
+for _, keymap in ipairs(navigation_keymaps) do
+  vim.keymap.set('n', keymap.lhs, keymap.rhs, {})
+end
 -- tree-sitter
 require'nvim-treesitter.configs'.setup {
   highlight = {

@@ -18,6 +18,7 @@ vim.api.nvim_create_user_command("Cpgh", function ()
     -- get remote url
     local git_remote_handle = io.popen("git remote get-url origin")
     local remote_url_base = git_remote_handle:read("*a"):gsub("^%s*(.-).git%s*$", "%1")
+    local remote_url_base = string.gsub(remote_url_base, "[\r\n]", "")
     git_remote_handle:close()
     -- get commit hash
     local git_rev_parse_handle = io.popen("git rev-parse HEAD")
